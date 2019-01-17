@@ -67,7 +67,7 @@ header {
 
 .content {
 	background-color: #f2f2f2;
-	box-shadow: inset 0px 3px 10px rgba(68, 68, 68, 0.6);
+	box-shadow: inset 0px 0px 5px rgba(68, 68, 68, 0.6);
 	padding: 20px 5%;
 }
 
@@ -77,6 +77,37 @@ header {
 	border-style: solid;
 	border-width: 0px;
 	border-radius: 10px;
+	display: flex;
+	flex-direction: row;
+}
+
+.content-box-inner {
+	border-right-style: solid;
+	border-width: 1px;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	position: relative;
+}
+
+.content-box-inner h2 {
+	color: #000000;
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+}
+
+#profile {
+	background: url(../img/user-regular.svg) no-repeat center 80%;
+	background-size: auto 70%;
+}
+
+#skills {
+	background: url(../img/code-branch-solid.svg) no-repeat center 80%;
+	background-size: auto 70%;
+}
+
+.last {
+	border-right-style: none;
 }
 
 .placeholder {
