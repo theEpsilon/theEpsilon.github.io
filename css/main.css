@@ -7,7 +7,7 @@ header {
 }
 
 .header-container {
-	background: url(../img/background.svg) no-repeat right center;
+	background: url(../img/background.png) no-repeat right center;
 	background-size: cover;
 	height: 100%;
 	width: 100%;
@@ -67,7 +67,7 @@ header {
 
 .content {
 	background-color: #f2f2f2;
-	box-shadow: inset 0px 0px 5px rgba(68, 68, 68, 0.6);
+	box-shadow: inset 0px 0px 7px rgba(68, 68, 68, 0.75);
 	padding: 20px 5%;
 }
 
@@ -83,27 +83,17 @@ header {
 
 .content-box-inner {
 	border-right-style: solid;
-	border-width: 1px;
-	height: 100%;
+	border-color: #f2f2f2;
+	border-width: 2px;
 	width: 100%;
 	text-align: center;
 	position: relative;
+	padding: 20px;
 }
 
-.content-box-inner h2 {
-	color: #000000;
-	font-weight: 400;
-	font-family: 'Roboto', sans-serif;
-}
-
-#profile {
-	background: url(../img/user-regular.svg) no-repeat center 80%;
-	background-size: auto 70%;
-}
-
-#skills {
-	background: url(../img/code-branch-solid.svg) no-repeat center 80%;
-	background-size: auto 70%;
+.feather-64 {
+	width: 64px;
+	height: 64px;
 }
 
 .last {
