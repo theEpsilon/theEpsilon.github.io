@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:200,400,700" rel="stylesheet">
 	<script src="https://unpkg.com/feather-icons"></script>
 
 
@@ -28,16 +28,53 @@
 		</div>
 	</header>
 	<section id="about">
-		<div class="content">
-			<div class="content-box">
-				<div id="profile" class="content-box-inner">
+		<div class="flex-content">
+			<div id="profile" class="content-box">
+				<div class="icon-wrapper">
 					<i class="feather-64 content-icon" data-feather="user" style="color: #51a9e6"></i>
+					<span style="color: #51a9e6;" class="content-box-seperator hidden-wide">Profile</span>
 				</div>
-				<div id="skills" class="content-box-inner">
+				<div class="text-wrapper">
+					<p><span style="color: #51a9e6;" class="content-box-seperator hidden-nar">Profile: </span>You already know my name, which is great, but far from everything there is to say about me. Click to view my personal profile.
+					</p>
+					<p><br>Currently: Student of Business Informatics at TU Berlin</p>
+				</div>
+			</div>
+			<div id="skills" class="content-box">
+				<div class="icon-wrapper">
 					<i class="feather-64 content-icon" data-feather="code" style="color: #e34f26"></i>
+					<span style="color: #e34f26;" class="content-box-seperator hidden-wide">Skills</span>
 				</div>
-				<div id="projects" class="content-box-inner last">
+				<div class="text-wrapper">
+					<p><span style="color: #e34f26;" class="content-box-seperator hidden-nar">Skills: </span>As much as I love plain coding, being a developer is much more than just knowing a few programming languages. Click to see what I am already familiar with in terms of software and design.</p>
+					<p><br>Mainly: Java, HTML/CSS</p>
+				</div>
+			</div>
+			<div id="projects" class="content-box last">
+				<div class="icon-wrapper">
 					<i class="feather-64 content-icon" data-feather="zap" style="color: #a4c639"></i>
+					<span style="color: #a4c639;" class="content-box-seperator hidden-wide">Projects</span>
+				</div>
+				<div class="text-wrapper">
+					<p><span style="color: #a4c639;" class="content-box-seperator hidden-nar">Projects: </span>In my spare time I like creating websites from scratch, developing Android applications and tinkering with my Raspberry Pi. Click to see what I have done so far.
+					</p>
+					<p><br>Mainly: Web development for STF Berlin e.V.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="stf">
+		<div class="flex-content">
+			<div class="overlay-container">
+				<img id="stf-website" src="img/stf.jpg">
+				<div class="overlay">
+					<p class="overlay-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+			<div class="overlay-container last">
+				<img id="az-website" src="img/az.jpg">
+				<div class="overlay">
+					<p class="overlay-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
 			</div>
 		</div>
