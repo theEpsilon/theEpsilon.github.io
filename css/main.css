@@ -101,6 +101,14 @@ p {
 	flex-direction: row;
 }
 
+.container {
+	background-color: #f2f2f2;
+	/*box-shadow: inset 0px 0px 7px rgba(68, 68, 68, 0.75);*/
+	padding: 20px 5%;
+	position: relative;
+	overflow: hidden;
+}
+
 .content {
 	background-color: #f2f2f2;
 	/*box-shadow: inset 0px 0px 7px rgba(68, 68, 68, 0.75);*/
@@ -108,15 +116,19 @@ p {
 }
 
 .content-box {
+	width: 25%;
+	display: inline-block;
+	vertical-align: top;
+	
 	background-color: #ffffff;
 	border-radius: 10px;
-	width: 100%;
-	text-align: center;
-	position: relative;
+	/*text-align: center;
+	position: relative;*/
 	padding: 40px;
 	max-width: 600px;
 	margin-right: 10px;
 	cursor: pointer;
+	overflow: hidden;
 }
 
 .content-box:hover {
@@ -131,8 +143,8 @@ p {
 
 @media(min-width: 1330px) {
 	.content-box {
-		display: flex;
-		flex-direction: row;
+		/*display: flex;
+		flex-direction: row;*/
 	}
 
 	.content-box-seperator {
@@ -145,19 +157,24 @@ p {
 		margin-bottom: 0.5em;
 	}
 
-	.text-wrapper {
-		float: right;
-		width: 80%;
-	}
-
 	.icon-wrapper {
 		margin-right: 40px;
+		text-align: center;
+		float: left;
+		height: 100%;
 	}
 
-	.text-wrapper p {
-		text-align: left;
+	.text {
+		/*text-align: left;*/
 		margin-top: 0px;
 		margin-bottom: 0px;
+		overflow: hidden;
+	}
+
+	.collapsible-content {
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.25s ease;
 	}
 }
 

@@ -11,7 +11,7 @@
 
 
 </head>
-<body>
+<body onresize="resetSizes()">
 	<header>
 		<div class="header-container">
 			<div id="sm-container">
@@ -28,38 +28,30 @@
 		</div>
 	</header>
 	<section id="about">
-		<div class="flex-content">
-			<div id="profile" class="content-box">
+		<div id="js-container-1" class="container">
+			<div id="profile" class="content-box js-coll">
 				<div class="icon-wrapper">
 					<i class="feather-64 content-icon" data-feather="user" style="color: #51a9e6"></i>
 					<span style="color: #51a9e6;" class="content-box-seperator hidden-wide">Profile</span>
 				</div>
-				<div class="text-wrapper">
-					<p><span style="color: #51a9e6;" class="content-box-seperator hidden-nar">Profile: </span>You already know my name, which is great, but far from everything there is to say about me. Click to view my personal profile.
-					</p>
-					<p><br>Currently: Student of Business Informatics at TU Berlin</p>
-				</div>
+				<p class="text"><span style="color: #51a9e6;" class="content-box-seperator hidden-nar">Profile: </span>You already know my name, which is great, but far from everything there is to say about me. Click to view my personal profile.<br><br>Currently: Student of Business Informatics at TU Berlin</p>
+				<div class="collapsible-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
 			</div>
-			<div id="skills" class="content-box">
+			<div id="skills" class="content-box js-coll">
 				<div class="icon-wrapper">
 					<i class="feather-64 content-icon" data-feather="code" style="color: #e34f26"></i>
 					<span style="color: #e34f26;" class="content-box-seperator hidden-wide">Skills</span>
 				</div>
-				<div class="text-wrapper">
-					<p><span style="color: #e34f26;" class="content-box-seperator hidden-nar">Skills: </span>As much as I love plain coding, being a developer is much more than just knowing a few programming languages. Click to see what I am already familiar with in terms of software and design.</p>
-					<p><br>Mainly: Java, HTML/CSS</p>
-				</div>
+				<p class="text"><span style="color: #e34f26;" class="content-box-seperator hidden-nar">Skills: </span>As much as I love plain coding, being a developer is much more than just knowing a few programming languages. Click to see what I am already familiar with in terms of software and design.<br><br>Mainly: Java, HTML/CSS</p>
+				<div class="collapsible-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
 			</div>
-			<div id="projects" class="content-box last">
+			<div id="projects" class="content-box js-coll last">
 				<div class="icon-wrapper">
 					<i class="feather-64 content-icon" data-feather="zap" style="color: #a4c639"></i>
 					<span style="color: #a4c639;" class="content-box-seperator hidden-wide">Projects</span>
 				</div>
-				<div class="text-wrapper">
-					<p><span style="color: #a4c639;" class="content-box-seperator hidden-nar">Projects: </span>In my spare time I like creating websites from scratch, developing Android applications and tinkering with my Raspberry Pi. Click to see what I have done so far.
-					</p>
-					<p><br>Mainly: Web development for STF Berlin e.V.</p>
-				</div>
+				<p class="text"><span style="color: #a4c639;" class="content-box-seperator hidden-nar">Projects: </span>In my spare time I like creating websites from scratch, developing Android applications and tinkering with my Raspberry Pi. Click to see what I have done so far.<br><br>Mainly: Web development for STF Berlin e.V.</p>
+				<div class="collapsible-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
 			</div>
 		</div>
 	</section>
@@ -79,8 +71,30 @@
 			</div>
 		</div>
 	</section>
+	<script type="text/javascript" src="js/jQuery.js"></script>
+	<script type="text/javascript" src="js/collapsible.js"></script>
 	<script>
       feather.replace()
+    </script>
+    <script type="text/javascript">
+    	var x;
+    	$("#js-container-1").ready(function(){
+    		x = $("#js-container-1").outerHeight();
+    	});
+	    function resetSizes() {
+
+			var coll = document.getElementsByClassName("js-coll");
+
+			for(var f = 0; f < coll.length; f++) {
+
+				console.log(x + "px");
+				console.log(coll[f].childNodes[5]);
+
+				if(!coll[f].childNodes[5].style.maxHeight) {
+					coll[f].style.height = (x-40) + "px";
+				}
+			}
+		}
     </script>
 </body>
 </html>
