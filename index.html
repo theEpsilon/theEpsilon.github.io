@@ -11,7 +11,7 @@
 
 
 </head>
-<body onresize="resetSizes()">
+<body onresize="equalizeHeights()">
 	<header>
 		<div class="header-container">
 			<div id="sm-container">
@@ -77,24 +77,28 @@
       feather.replace()
     </script>
     <script type="text/javascript">
-    	var x;
-    	$("#js-container-1").ready(function(){
-    		x = $("#js-container-1").outerHeight();
-    	});
-	    function resetSizes() {
+    	function equalizeHeights() {
+    		var heights = new Array();
 
-			var coll = document.getElementsByClassName("js-coll");
+    		$(".js-coll").each(function() {
 
-			for(var f = 0; f < coll.length; f++) {
+    			console.log($(this).find(".collapsible-content").css("max-height"));
 
-				console.log(x + "px");
-				console.log(coll[f].childNodes[5]);
+    			if($(this).find(".collapsible-content").css("max-height") == "0px") {
+					$(this).css('height', 'auto');
 
-				if(!coll[f].childNodes[5].style.maxHeight) {
-					coll[f].style.height = (x-40) + "px";
-				}
-			}
-		}
+    				heights.push($(this).height());
+    			}
+    		});
+
+    		var maxHeight = Math.max.apply(Math, heights);
+
+    		$(".js-coll").each(function() {
+    			if($(this).find(".collapsible-content").css("max-height") == "0px") {
+    				$(this).css("height", maxHeight + "px");
+    			}
+    		});
+    	}
     </script>
 </body>
 </html>

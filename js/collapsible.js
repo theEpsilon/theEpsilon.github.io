@@ -1,9 +1,9 @@
 var coll = document.getElementsByClassName("js-coll");
 
 //console.log(document.getElementsByTagName("body")[0]);
-$("#js-container-1").ready(function(){
+/*$("#js-container-1").ready(function(){
   	console.log($("#js-container-1").outerHeight())
-});
+});*/
 //document.getElementsByTagName("body")[0].onresize = resetSizes();
 
 for (var i = 0; i < coll.length; i++) {
@@ -14,8 +14,8 @@ for (var i = 0; i < coll.length; i++) {
     if (content.style.maxHeight){
       	content.style.maxHeight = null;
     } else {
-    	this.style.alignSelf = "flex-start";
-      	content.style.maxHeight = content.scrollHeight + "px";
+        $(this).css('height', 'auto');
+        content.style.maxHeight = content.scrollHeight + "px";
     } 
   });
 }
