@@ -1,10 +1,4 @@
-var coll = document.getElementsByClassName("js-coll");
-
-//console.log(document.getElementsByTagName("body")[0]);
-/*$("#js-container-1").ready(function(){
-  	console.log($("#js-container-1").outerHeight())
-});*/
-//document.getElementsByTagName("body")[0].onresize = resetSizes();
+/*var coll = document.getElementsByClassName("js-coll");
 
 for (var i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
@@ -19,16 +13,51 @@ for (var i = 0; i < coll.length; i++) {
     } 
   });
 }
-/*
-function resetSizes() {
-	for(var f = 0; f < coll.length; f++) {
-		var x = document.getElementById("js-container-1").scrollHeight;
-
-		console.log(coll[f].childNodes[5]);
-
-		if(!coll[f].childNodes[5].style.maxHeight) {
-			coll[f].height = x + "px";
-		}
-	}
-}
 */
+
+$(document).load(function() {
+  assignClickEvents();
+});
+
+function assignClickEvents() {
+
+  var collapsibles = new Array();
+
+  $(".js-coll").each(function() {
+    collapsibles.push($(this));
+
+    $(this).click(function() {
+      var content = $(this).find(".collapsible-content");
+
+      if(content.css("max-height") != "0px") {
+        content.css("max-height", "0px");
+      } else {
+        $(this).css('height', 'auto');
+        content.css("max-height", content.prop("scrollHeight") + "px");
+      }
+    });
+  });
+}
+
+function equalizeHeights() {
+  var heights = new Array();
+
+  $(".js-coll").each(function() {
+
+    console.log($(this).find(".collapsible-content").css("max-height"));
+
+    if($(this).find(".collapsible-content").css("max-height") == "0px") {
+    $(this).css('height', 'auto');
+
+      heights.push($(this).height());
+    }
+  });
+
+  var maxHeight = Math.max.apply(Math, heights);
+
+  $(".js-coll").each(function() {
+    if($(this).find(".collapsible-content").css("max-height") == "0px") {
+      $(this).css("height", maxHeight + "px");
+    }
+  });
+}
