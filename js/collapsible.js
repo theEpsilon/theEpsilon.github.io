@@ -1,20 +1,3 @@
-/*var coll = document.getElementsByClassName("js-coll");
-
-for (var i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    //this.classList.toggle("active");
-
-    var content = this.childNodes[5];
-    if (content.style.maxHeight){
-      	content.style.maxHeight = null;
-    } else {
-        $(this).css('height', 'auto');
-        content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-*/
-
 $(document).ready(function() {
   equalizeHeights();
   assignClickEvents();
@@ -38,17 +21,20 @@ function assignClickEvents() {
   $(".js-coll").each(function() {
     collapsibles.push($(this));
 
-    $(this).click(async function() {
+    $(this).click(function() {
       var content = $(this).find(".collapsible-content");
 
       if(content.css("max-height") != "0px") {
         content.css("max-height", "0px");
-        await sleep(260);
-        console.log("resizing");
-        equalizeHeights();
+
+        content.on("transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd", function() {
+          equalizeHeights();
+          content.off();
+        });
+
       } else {
-        $(this).css("height", "auto");
         content.css("max-height", content.prop("scrollHeight") + "px");
+        $(this).css("height", "auto");
       }
     });
   });
@@ -59,13 +45,13 @@ function equalizeHeights() {
 
   $(".js-coll").each(function() {
 
-    console.log($(this).find(".collapsible-content").css("max-height"));
+    //console.log($(this).find(".collapsible-content").css("max-height"));
 
     if($(this).find(".collapsible-content").css("max-height") == "0px") {
-      console.log("entered if condition");
       $(this).css("height", "auto");
+      $(this).find(".text").css("margin-bottom", "0px");
 
-      heights.push($(this).height());
+      heights.push($(this).outerHeight(true));
     }
   });
 
@@ -75,7 +61,28 @@ function equalizeHeights() {
 
   $(".js-coll").each(function() {
     if($(this).find(".collapsible-content").css("max-height") == "0px") {
-      $(this).css("height", maxHeight + "px");
+      var outerheight = $(this).outerHeight(true);
+      console.log("Margin to set: " + (maxHeight - outerheight));
+      console.log(maxHeight > outerheight);
+      if(maxHeight > outerheight) {
+        $(this).find(".text").css("margin-bottom", (maxHeight - outerheight) + "px");
+      }
     }
   });
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
