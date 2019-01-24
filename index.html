@@ -76,29 +76,5 @@
 	<script>
       feather.replace()
     </script>
-    <script type="text/javascript">
-    	function equalizeHeights() {
-    		var heights = new Array();
-
-    		$(".js-coll").each(function() {
-
-    			console.log($(this).find(".collapsible-content").css("max-height"));
-
-    			if($(this).find(".collapsible-content").css("max-height") == "0px") {
-					$(this).css('height', 'auto');
-
-    				heights.push($(this).height());
-    			}
-    		});
-
-    		var maxHeight = Math.max.apply(Math, heights);
-
-    		$(".js-coll").each(function() {
-    			if($(this).find(".collapsible-content").css("max-height") == "0px") {
-    				$(this).css("height", maxHeight + "px");
-    			}
-    		});
-    	}
-    </script>
 </body>
 </html>
