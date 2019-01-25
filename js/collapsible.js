@@ -62,6 +62,8 @@ function equalizeHeights() {
   $(".js-coll").each(function() {
     if($(this).find(".collapsible-content").css("max-height") == "0px") {
       var outerheight = $(this).outerHeight(true);
+      console.log("Max-height: " + maxHeight);
+      console.log("Outer-height: " + outerheight);
       console.log("Margin to set: " + (maxHeight - outerheight));
       console.log(maxHeight > outerheight);
       if(maxHeight > outerheight) {
