@@ -14,6 +14,9 @@ $(document).ready(function() {
   });
 });
 
+/*
+Called once on page loadup, assigning click listeners to collapsible items
+*/
 function assignClickEvents() {
 
   var collapsibles = new Array();
