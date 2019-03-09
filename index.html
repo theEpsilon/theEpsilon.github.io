@@ -6,7 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:200,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,200,400,700|Roboto+Mono:100" rel="stylesheet">
+
 	<script src="https://unpkg.com/feather-icons"></script>
 
 
@@ -15,12 +16,14 @@
 	<header>
 		<div class="header-container">
 			<div id="sm-container">
-				<i class="fab fa-linkedin sm-icon"></i>
-				<i class="fab fa-facebook sm-icon"></i>
-				<i class="fab fa-instagram sm-icon"></i>
+				<a target="_blank" href="https://www.instagram.com/theepsil0n/"><svg class="sm-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a>
+
+				<a target="_blank" href="https://www.linkedin.com/in/fabian-berndt"><svg class="sm-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+
+				<a target="_blank" href="https://www.facebook.com/fabian.berndt.1"><svg class="sm-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
 			</div>
 			<div id="intro-text">
-				<h1>Front-End <span style="color: #009900;">Android</span> <br>and <span style="color: #990000;">Web</span> Developer</h1>
+				<h1>Front-End <span style="color: #990000;">Web</span> and<br><span style="color: #009900;">Software</span> Developer</h1>
 				<h2>My name is Fabian. <br>And wasted potential is my greatest fear.</h2>
 			</div>
 
@@ -30,55 +33,181 @@
 	<section id="about">
 		<div id="js-container-1" class="container">
 			<div id="profile" class="content-box js-coll">
-				<div class="icon-wrapper">
+				<input id="checkbox-collapsible-1" type="checkbox" class="toggle nojs">
+				<label for="checkbox-collapsible-1" class="lbl-toggle nojs">
+					<div id="profile-banner" class="banner-header">
+						<h3>Profile</h3>
+						<p class="text">Currently: Business Informatics at TU Berlin</p>
+						<i class="feather-40 dropdown-icon" data-feather="chevron-down"></i>
+					</div>
+				</label>
+				<!--<div class="icon-wrapper">
 					<i class="feather-64 content-icon" data-feather="user" style="color: #51a9e6"></i>
 					<span style="color: #51a9e6;" class="content-box-seperator hidden-wide">Profile</span>
 				</div>
-				<p class="text"><span style="color: #51a9e6;" class="content-box-seperator hidden-nar">Profile: </span>You already know my name, which is great, but far from everything there is to say about me. Click to view my personal profile.<br><br>Currently: Student of Business Informatics at TU Berlin</p>
-				<div class="collapsible-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+				<p class="text"><span style="color: #51a9e6;" class="content-box-seperator hidden-nar">Profile: </span>You already know my name, which is great, but far from everything there is to say about me. Click to view my personal profile.<br><br>Currently: Student of Business Informatics at TU Berlin</p>-->
+				<div class="collapsible-content nojs">
+					<ul>
+						<li>
+							<i class="fas fa-smile"></i>
+							<p>Fabian Berndt</p>
+						</li>
+						<li>
+							<i class="fas fa-map-marker-alt"></i>
+							<p>Berlin, Germany</p>
+						</li>
+						<li>
+							<i class="fas fa-graduation-cap"></i>
+							<p>Business Informatics (B.Sc.), 3rd semester<br><span style = "font-style: italic;">Technical University of Berlin</span></p>
+						</li>
+						<li>
+							<i class="fas fa-star-of-life"></i>
+							<p>20 years old</p>
+						</li>
+						<li>
+							<i class="fas fa-envelope"></i>
+							<p><a href="mailto:hello@fabianberndt.de">hello@fabianberndt.de</a></p>
+						</li>
+					</ul>
+				</div>
 			</div>
 			<div id="skills" class="content-box js-coll">
-				<div class="icon-wrapper">
+				<input id="checkbox-collapsible-2" type="checkbox" class="toggle nojs">
+				<label for="checkbox-collapsible-2" class="lbl-toggle nojs">
+					<div id="skills-banner" class="banner-header">
+						<h3>Skills</h3>
+						<p class="text">Mainly: Java, HTML/CSS</p>
+						<i class="feather-40 dropdown-icon" data-feather="chevron-down"></i>
+					</div>
+				</label>
+				<!--<div class="icon-wrapper">
 					<i class="feather-64 content-icon" data-feather="code" style="color: #e34f26"></i>
 					<span style="color: #e34f26;" class="content-box-seperator hidden-wide">Skills</span>
 				</div>
 				<p class="text"><span style="color: #e34f26;" class="content-box-seperator hidden-nar">Skills: </span>As much as I love plain coding, being a developer is much more than just knowing a few programming languages. Click to see what I am already familiar with in terms of software and design.<br><br>Mainly: Java, HTML/CSS</p>
-				<i class="feather-64 dropdown-icon" data-feather="chevron-down"></i>
-				<div class="collapsible-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+				-->
+				<div class="collapsible-content nojs">
+					<ul style="padding-bottom: 0px;">
+						<span class="header">
+							<i class="fab fa-java" style="color: #009900"></i>
+							<h4 style="color: #009900">Software</h4>
+						</span>
+						<li>
+							<div class="subheader">
+								<i class="fas fa-code"></i>
+								<p>Coding</p>
+							</div>
+							<p>Java, Java EE, Scala, Haskell, Prolog, SQLite, XML</p>
+						</li>
+						<li>
+							<div class="subheader">
+								<i class="fab fa-github"></i>
+								<p>Tools</p>
+							</div>
+							<p>Android Studio, Git, Maven</p>
+						</li>
+						<li>
+							<div class="subheader">
+								<i class="fas fa-code-branch"></i>
+								<p>Modelling</p>
+							</div>
+							<p>UML, OCL, BPMN 2.0, CMMN</p>
+						</li>
+					</ul>
+					<ul style="border-style: none; padding-top: 0px;">
+						<span class="header">
+							<i style="color: #990000" class="fab fa-html5"></i>
+							<h4 style="color: #990000">Web</h4>
+						</span>
+						<li>
+							<div class="subheader">
+								<i class="fas fa-code"></i>
+								<p>Coding</p>
+							</div>
+							<p>HTML/CSS, JavaScript, jQuery</p>
+						</li>
+						<li>
+							<div class="subheader">
+								<i class="fab fa-joomla"></i>
+								<p>Tools</p>
+							</div>
+							<p>Joomla!, Wordpress</p>
+						</li>
+						<li>
+							<div class="subheader">
+								<i class="fab fa-adobe"></i>
+								<p>Design</p>
+							</div>
+							<p>Photoshop, Illustrator, Premiere, GIMP</p>
+						</li>
+					</ul>
+				</div>
 			</div>
 			<div id="projects" class="content-box js-coll last">
-				<div class="icon-wrapper">
+				<input id="checkbox-collapsible-3" type="checkbox" class="toggle nojs">
+				<label for="checkbox-collapsible-3" class="lbl-toggle nojs">
+					<div id="projects-banner" class="banner-header">
+						<h3>Projects</h3>
+						<p class="text">Mainly: Web development for STF Berlin e.V.</p>
+						<i class="feather-40 dropdown-icon" data-feather="chevron-down"></i>
+					</div>
+				</label>
+				<!--<div class="icon-wrapper">
 					<i class="feather-64 content-icon" data-feather="zap" style="color: #a4c639"></i>
 					<span style="color: #a4c639;" class="content-box-seperator hidden-wide">Projects</span>
 				</div>
-				<p class="text"><span style="color: #a4c639;" class="content-box-seperator hidden-nar">Projects: </span>In my spare time I like creating websites from scratch, developing Android applications and tinkering with my Raspberry Pi. Click to see what I have done so far.<br><br>Mainly: Web development for STF Berlin e.V.</p>
-				<div class="collapsible-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+				<p class="text"><span style="color: #a4c639;" class="content-box-seperator hidden-nar">Projects: </span>In my spare time I like creating websites from scratch, developing Android applications and tinkering with my Raspberry Pi. Click to see what I have done so far.<br><br>Mainly: Web development for STF Berlin e.V.</p>-->
+				<div class="collapsible-content nojs">
+					<ul>
+						<li style="align-items: start;">
+							<i class="fab fa-html5" style="font-size: 40px;"></i>
+							<p>I am currently working voluntarily as head web developer for STF Berlin e.V. (see below). Because helping people in need is worth every workload.<br><br><a target="_blank" href="https://www.stfberlin.de">www.stfberlin.de</a><br><a target="_blank" href="http://www.aktionzukunft2018.de">www.aktionzukunft2018.de</a></p>
+						</li>
+						<li style="align-items: start;">
+							<i class="fab fa-android" style="font-size: 40px;"></i>
+							<p>There are several unfinished Android projects around on my desk. Just contact me for samples.</p>
+						</li>
+						<li style="margin: 0px; text-align: center;">
+							<p><br><a target="_blank" href="https://www.linkedin.com/in/fabian-berndt">Visit me on LinkedIn for more info on my past work places.</a></p>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</section>
 	<section id="stf">
 		<div class="flex-content">
 			<div class="overlay-container">
+				<a target="_blank" href="https://www.stfberlin.de"><div class="overlay">
+					<p class="overlay-text">Schüler Treffen Flüchtlinge e.V. („Students meet refugees“) is a registered non-profit organization founded and guided by students from Berlin. Its purpose is to give young people from a migrant background the possibility for cultural exchange with German students and people. We host joint events for students from Germany and abroad to encourage communication and education on the different cultures. Such events are cooking together or exploring the city of Berlin. Our goal is to motivate students to take a broader part in social engagement in especially but not limited to intercultural exchange.<br><br>
+					I am a full member and voluntary head web developer of STF Berlin e.V. since 2018, because in my opinion, everybody can and everybody should participate in making the world a better place.<br><br>Click to go to www.stfberlin.de
+					</p>
+				</div></a>
 				<img id="stf-website" src="img/stf.jpg">
-				<div class="overlay">
-					<p class="overlay-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</div>
 			</div>
 			<div class="overlay-container last">
 				<img id="az-website" src="img/az.jpg">
-				<div class="overlay">
-					<p class="overlay-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</div>
+				<a target="_blank" href="http://www.aktionzukunft2018.de"><div class="overlay">
+					<p class="overlay-text">Aktion Zukunft 2018 (“Operation Future 2018”) is a multi-day workshop in Berlin organized by STF Berlin e.V. for students from migrant backgrounds in Germany. In our annual seminar we teach those students the techniques they require to develop and implement their own ideas and social projects in Germany.<br><br>Besides the main website of STF Berlin e.V., I am also constantly developing this website to fully represent our organization’s most successful venture.<br><br>Click to go to www.aktionzukunft2018.de
+					</p>
+				</div></a>
 			</div>
 		</div>
 	</section>
-	<section class="footer">
-		<footer>
-			
-		</footer>	
+	<section id="contact">
+		<div class="contact">
+			<h4>Contact</h4>
+			<p><a href="mailto:f.berndt99@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+			hello@fabianberndt.de</a></p>
+		</div>
 	</section>
+	<footer>
+		<p id="imprint"><a href="imprint.html">Imprint </a><a href="privacy.html">Privacy</a></p>
+		<p id="joke">Handmade and 100% organic <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#009900" stroke="#1d1d1d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-feather"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path><line x1="16" y1="8" x2="2" y2="22"></line><line x1="17.5" y1="15" x2="9" y2="15"></line></svg></p>
+	</footer>
 	<script type="text/javascript" src="js/jQuery.js"></script>
 	<script type="text/javascript" src="js/collapsible.js"></script>
+	<script type="text/javascript" src="js/support.js"></script>
 	<script>
       feather.replace()
     </script>

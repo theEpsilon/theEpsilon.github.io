@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:200,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,300');
 
 header {
 	height: 100%;
 	width: 100%;
 	overflow: hidden;
+	border-bottom-style: solid;
+	border-width: 3px;
+	border-color: #1d1d1d;
 }
 
 p {
 	font-family: 'Roboto', sans-serif;
 	font-size: 17px;
 	font-weight: 200;
+	margin: 0px;
 }
 
 h1 {
@@ -22,6 +27,27 @@ h2 {
 	font-size: 1.6em;
 	font-weight: 400; 
 	line-height: 1.3;
+}
+
+svg {
+	display: inline;
+	vertical-align: bottom;
+}
+
+a:hover svg {
+	stroke: #00ba00;
+}
+
+a:hover {
+	color: #00ba00;
+}
+
+#about a[href^="mailto"] { 
+	color: black; 
+}
+
+#about a[href^="mailto"]:hover { 
+	color: #00ba00; 
 }
 
 .flex-row-display {
@@ -96,30 +122,23 @@ h2 {
 	margin-right: 10px;
 }
 
-.section-title {
-	width: 100%;
-	padding: 5px 5%;
-	background-color: #ffffff;
-}
+/*---------------------
+Banner section
+---------------------*/
 
-.section-title h3 {
-	font-size: 40px;
-	font-weight: 700;
-	font-family: 'Roboto', sans-serif;
-  	color: #3581fc;
-}
-
-.flex-content {
-	background-color: #f2f2f2;
-	/*box-shadow: inset 0px 0px 7px rgba(68, 68, 68, 0.75);*/
-	padding: 20px 5%;
-	display: flex;
-	flex-direction: row;
+#stf p {
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
 
 .container {
 	background-color: #f2f2f2;
-	/*box-shadow: inset 0px 0px 7px rgba(68, 68, 68, 0.75);*/
+	box-shadow: inset 0px 5px 5px -5px rgba(68, 68, 68, 0.75);
 	padding: 20px 5%;
 	position: relative;
 	overflow: hidden;
@@ -132,23 +151,121 @@ h2 {
 }
 
 .content-box {
-	width: 26.5%;
+	width: 32.5%;
 	/*display: inline-block;*/
 	position: relative;
 	float: left;
-	vertical-align: top;
-	background-color: #ffffff;
+	vertical-align: middle;
 	border-radius: 2px;
 	border-width: 0px;
 	box-shadow: 0px 0px 5px rgba(68, 68, 68, 0.6);
-	padding: 40px 3%;
 	margin-right: 1.25%;
-	cursor: pointer;
 	overflow: hidden;
+	text-align: right;
 }
 
-.content-box:hover {
-	/*box-shadow: 0px 0px 7px rgba(68, 68, 68, 0.6);*/
+.banner-header {
+	padding: 40px 7.5% 40px 45%;
+	cursor: pointer;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.content-box h3 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 50px; 
+	font-weight: 400;
+	letter-spacing: -2px;
+	color: #1d1d1d;
+}
+
+/* Non-JS collapsible support */
+
+label {
+	cursor: pointer;
+}
+
+input[type='checkbox'] {
+	display: none;
+}
+
+.lbl-toggle.nojs {
+	display: block;
+}
+
+.toggle.nojs:checked + .lbl-toggle.nojs + .collapsible-content.nojs {
+  max-height: 350px;
+}
+
+/******************************/
+
+#profile-banner {
+	background: url(../img/banner-profile.png) no-repeat left center, 
+	url(../img/banner-profile-end.png) no-repeat right center,
+	url(../img/white.jpg) repeat left top;
+	background-size: contain;
+}
+
+#skills-banner {
+	background: url(../img/banner-skills.png) no-repeat left center, 
+	url(../img/banner-skills-end.png) no-repeat right center,
+	url(../img/white.jpg) repeat left top;
+	background-size: contain;
+}
+
+#projects-banner {
+	background: url(../img/banner-projects.png) no-repeat left center, 
+	url(../img/banner-projects-end.png) no-repeat right center,
+	url(../img/white.jpg) repeat left top;
+	background-size: contain;
+}
+
+@media(max-width: 1450px) and (min-width: 1001px) {
+	.content-box h3 {
+		font-size: 35px;
+	}
+
+	.content-box p {
+		font-size: 15px;
+	}
+
+	.banner-header {
+		padding: 30px 7.5% 30px 45%;
+	}
+
+	#profile-banner {
+		background: url(../img/banner-profile-small.jpg) no-repeat left center, 
+		url(../img/banner-profile-end.png) no-repeat right center,
+		url(../img/white.jpg) repeat left top;
+		background-size: contain;
+	}
+
+	#skills-banner {
+		background: url(../img/banner-skills-small.jpg) no-repeat left center, 
+		url(../img/banner-skills-end.png) no-repeat right center,
+		url(../img/white.jpg) repeat left top;
+		background-size: contain;
+	}
+
+	#projects-banner {
+		background: url(../img/banner-projects-small.jpg) no-repeat left center, 
+		url(../img/banner-projects-end.png) no-repeat right center,
+		url(../img/white.jpg) repeat left top;
+		background-size: contain;
+	}
+}
+
+@media(max-width: 1000px) {
+	.content-box {
+		float: none;
+		width: 100%;
+		margin-bottom: 20px;
+	}
 }
 
 .content-box-seperator {
@@ -158,53 +275,126 @@ h2 {
 }
 
 .collapsible-content {
-		max-height: 0;
-		overflow: hidden;
-		transition: max-height 0.25s linear;
+	background-color: #ffffff;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height .2s ease;
+	text-align: left;
+}
+
+.collapsible-content.nojs {
+	background-color: #ffffff;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 1s linear;
+}
+
+.collapsible-content ul {
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #1d1d1d;
+	background-color: #ffffff;
+	padding: 20px 15% 40px 15%;
+	margin: 0px;
+	list-style-type: none;
+}
+
+.collapsible-content li {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: left;
+	margin-bottom: 15px;
+}
+
+.collapsible-content i {
+	display: inline-block;
+	text-align: center;
+	font-size: 25px;
+	color: #d1d1d1;
+	margin-right: 28px;
+	width: 25px;
+}
+
+.collapsible-content p {
+	display: inline-block;
+}
+
+.collapsible-content .subheader {
+	flex-shrink: 0;
+	width: 80px;
+	margin-right: 10px;
+	text-align: center;
+}
+
+.collapsible-content .subheader p {
+	color: #aaaaaa;
+	margin-top: 3px;
+	text-align: center;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.collapsible-content .subheader i {
+	width: auto;
+	font-size: 25px;
+	display: block;
+	text-align: center;
+	margin: 0px;
+}
+
+.collapsible-content h4 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	display: inline-block;
+	margin: 15px 0px;
+}
+
+.header i {
+	font-size: 30px;
+	margin-right: 10px;
 }
 
 .text {
-		text-align: left;
-		margin-top: 0px;
-		margin-bottom: 0px;
-		overflow: hidden;
-}
-
-.icon-wrapper {
-	text-align: center;
-	margin-bottom: 20px;
+	text-align: right;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	overflow: hidden;
 }
 
 .dropdown-icon {
+
 	position: absolute;
-	bottom: -10px;
-	right: 2px;
-	background-color: #ffffff;
+	bottom: -5px;
+	right: 50%;
+	margin-right: -20px;
 }
 
-@media(min-width: 1330px) {
-	.content-box {
-		/*display: flex;
-		flex-direction: row;*/
-	}
+.lbl-toggle:hover .dropdown-icon {
+	animation: bounce 0.8s infinite;
+}
 
-	.content-box-seperator {
-		position: relative;
-	}
 
-	.content-icon {
-		position: relative;
-		left: 0px;
-		margin-bottom: 0.5em;
-	}
 
-	.icon-wrapper {
-		margin-right: 40px;
-		margin-bottom: 0px;
-		text-align: center;
-		float: left;
-		height: 100%;
-	}
+/* Dropdown icon hover animation */
+@keyframes bounce {
+	0% {bottom: -5px;}
+	70% {bottom: 0px;}
+	100% {bottom: -5px}
+}
+
+/*-----------------------------*/
+
+/*------------------
+Website references
+-------------------*/
+
+.flex-content {
+	background-color: #f2f2f2;
+	padding: 20px 5%;
+	display: flex;
+	flex-direction: row;
 }
 
 #stf-website, #az-website {
@@ -213,28 +403,29 @@ h2 {
 	border-color: #f2f2f2;
 	border-radius: 1px;
 	border-width: 0px;
-	box-shadow: 0px 0px 7px rgba(68, 68, 68, 0.6);
-}
-
-#stf-website:hover, #az-website:hover {
-	box-shadow: 0px 0px 7px rgba(68, 68, 68, 0.75);
+	display: block;
+	/*box-shadow: 0px 0px 7px rgba(68, 68, 68, 0.6);*/
 }
 
 .overlay-container {
 	position: relative;
 	width: 100%;
-	margin-right: 10px;
+	margin-right: 15px;
 	cursor: pointer;
 }
 
 .overlay {
 	position: absolute;
 	left: 0;
+	right: 0;
+	bottom: 0;
 	top: 0;
+	overflow: hidden;
 	height: 100%;
 	width: 100%;
 	background-color: rgba(255, 255, 255, 0.85);
 	border-radius: 1px;
+	border-width: 0px;
 	opacity: 0;
 	transition: .4s ease;
 	display: flex;
@@ -248,6 +439,11 @@ h2 {
 .overlay-text {
 	margin: 30px;
 	text-align: justify;
+	font-weight: 400;
+}
+
+a:hover .overlay {
+	color: black;
 }
 
 .section-heading {
@@ -256,6 +452,62 @@ h2 {
 	font-size: 30px;
 	text-align: center;
 	margin-bottom: 20px;
+}
+
+/*
+--------------------
+Footer
+--------------------
+*/
+
+#contact {
+	background-color: #1d1d1d;
+}
+
+.contact {
+	padding: 20px;
+}
+
+.contact * {
+	font-family: 'Roboto', sans-serif;
+	color: #f2f2f2;
+	font-size: 20px;
+	text-align: center;
+}
+
+.contact p {
+	margin-top: 15px;
+	font-weight: 200;
+	cursor: pointer;
+}
+
+.contact h4 {
+	font-size: 25px;
+	font-weight: 400;
+	margin: 0px;
+}
+
+.contact svg {
+	margin-right: 0.5em;
+}
+
+footer {
+	background-color: #ffffff;
+	padding: 10px;
+}
+
+footer p {
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 300;
+	font-size: 20px;
+	color: #1d1d1d;
+	vertical-align: middle;
+	text-align: left;
+	display: inline;
+}
+
+#joke {
+	float: right;
 }
 
 /*
@@ -269,8 +521,17 @@ General modification
 	height: 64px;
 }
 
+.feather-40 {
+	width: 40px;
+	height: 40px;
+}
+
 .last {
 	margin-right: 0px;
+}
+
+.last-bottom {
+	margin-bottom: 0px;
 }
 
 .placeholder {

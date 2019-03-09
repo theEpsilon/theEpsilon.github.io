@@ -15,7 +15,7 @@ $(document).ready(function() {
 });
 
 /*
-Called once on page loadup, assigning click listeners to collapsible items
+Called upon page loadup, assigning click listeners to collapsible items
 */
 function assignClickEvents() {
 
@@ -24,11 +24,14 @@ function assignClickEvents() {
   $(".js-coll").each(function() {
     collapsibles.push($(this));
 
-    $(this).click(function() {
-      var content = $(this).find(".collapsible-content");
+    $(this).find(".lbl-toggle").click(function() {
+
+      var current = $(this).parent();
+      var content = current.find(".collapsible-content");
 
       if(content.css("max-height") != "0px") {
         content.css("max-height", "0px");
+        current.find(".dropdown-icon").css({transform: "rotate(0deg)", transition: "0.2s"});
 
         content.on("transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd", function() {
           equalizeHeights();
@@ -36,8 +39,9 @@ function assignClickEvents() {
         });
 
       } else {
-        content.css("max-height", content.prop("scrollHeight") + "px");
-        $(this).css("height", "auto");
+        content.css("max-height", content.prop("scrollHeight") + 200 + "px");
+        current.css("height", "auto");
+        current.find(".dropdown-icon").css({transform: "rotate(180deg)", transition: "0.2s"});
       }
     });
   });
@@ -75,19 +79,3 @@ function equalizeHeights() {
     }
   });
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
