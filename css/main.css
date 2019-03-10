@@ -140,6 +140,34 @@ a:hover {
 	}
 }
 
+@media (max-width: 1170px) and (orientation: portrait) {
+	.header-container {
+		align-items: start;
+		justify-content: center;
+	}
+
+	#intro-text h1 {
+		font-size: 70px;
+		display: block;
+		text-align: center;
+		padding: 0 10px;
+	}
+
+	#intro-text h2 {
+		font-size: 30px;
+		text-align: center;
+		padding: 0 10px;
+	}
+
+	#intro-text {
+		width: 80%;
+		margin: 10% 0px;
+		display: block;
+		text-align: center;
+	}
+
+}
+
 @media (max-width: 1000px) {
 	.header-container {
 		align-items: start;
@@ -179,32 +207,66 @@ a:hover {
 	}
 }
 
-@media (max-width: 450px) {
+@media (max-width: 451px) and (min-aspect-ratio: 901/1600) {
+	#intro-text {
+		position: absolute;
+		top: 2%;
+		margin: 0;
+	}
+}
+
+@media (max-width: 451px) and (max-aspect-ratio: 9/16) {
+	#intro-text {
+		position: absolute;
+		top: 8%;
+		margin: 0;
+	}
+}
+
+@media (max-width: 451px) and (max-aspect-ratio: 1/2) {
+	#intro-text {
+		position: absolute;
+		top: 15%;
+		margin: 0;
+	}
+}
+
+@media (max-width: 361px) and (min-aspect-ratio: 2/3) {
 	#intro-text h1 {
-		display: block;
-		font-size: 45px;
-		text-align: center;
-		padding: 0 10px;
+		font-size: 34px;
 	}
 
 	#intro-text h2 {
-		font-size: 20px;
-		text-align: center;
-		padding: 0 10px;
-	}
-
-	#intro-text br {
-		display: none;
+		font-size: 16px;
 	}
 
 	#intro-text {
-		position: absolute;
-		top: 10%;
-		margin: 0;
-		display: block;
-		text-align: center;
+		top: 2%;
+	}
+}
+
+@media (max-width: 361px) and (max-aspect-ratio: 200/301) {
+	#intro-text h1 {
+		font-size: 40px;
 	}
 
+	#intro-text h2 {
+		font-size: 18px;
+	}
+
+	#intro-text {
+		top: 5%;
+	}
+}
+
+@media (max-width: 250px) {
+	#intro-text h1 {
+		font-size: 25px;
+	}
+
+	#intro-text h2 {
+		font-size: 15px;
+	}
 }
 
 /*---------------------
@@ -342,6 +404,29 @@ input[type='checkbox'] {
 		padding: 30px 7.5% 30px 45%;
 	}
 
+	#profile-banner {
+		background: url(../img/banner-profile-small.jpg) no-repeat left center, 
+		url(../img/banner-profile-end.png) no-repeat right center,
+		url(../img/white.jpg) repeat left top;
+		background-size: contain;
+	}
+
+	#skills-banner {
+		background: url(../img/banner-skills-small.jpg) no-repeat left center, 
+		url(../img/banner-skills-end.png) no-repeat right center,
+		url(../img/white.jpg) repeat left top;
+		background-size: contain;
+	}
+
+	#projects-banner {
+		background: url(../img/banner-projects-small.jpg) no-repeat left center, 
+		url(../img/banner-projects-end.png) no-repeat right center,
+		url(../img/white.jpg) repeat left top;
+		background-size: contain;
+	}
+}
+
+@media (max-width: 400px) {
 	#profile-banner {
 		background: url(../img/banner-profile-small.jpg) no-repeat left center, 
 		url(../img/banner-profile-end.png) no-repeat right center,
@@ -565,6 +650,18 @@ a:hover .overlay {
 	}
 }
 
+@media (max-width: 410px) {
+	.overlay-text {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 340px) {
+	.overlay-text {
+		font-size: 10px;
+	}
+}
+
 /*
 --------------------
 Footer
@@ -582,7 +679,6 @@ Footer
 .contact * {
 	font-family: 'Roboto', sans-serif;
 	color: #f2f2f2;
-	font-size: 20px;
 	text-align: center;
 }
 
@@ -631,6 +727,14 @@ footer p {
 		font-size: 14px;
 		display: block;
 		text-align: center;
+	}
+
+	.contact h4 {
+		font-size: 20px;
+	}
+
+	.contact p {
+		font-size: 15px;
 	}
 
 	#joke {
