@@ -171,12 +171,23 @@ a:hover {
 	}
 }
 
+@media handheld and (orientation: portrait) and (max-aspect-ratio: 1/2) {
+	#intro-text {
+		margin: 12% 0px;
+	}
+
+	#intro-text h1 {
+		font-size: 65px;
+	}
+
+	#intro-text h2 {
+		font-size: 22px;
+	}
+}
+
 @media handheld and (orientation: portrait) and (min-aspect-ratio: 1/2) {
 	#intro-text {
-		width: 80%;
 		margin: 10% 0px;
-		display: block;
-		text-align: center;
 	}
 
 	#intro-text h1 {
@@ -190,18 +201,29 @@ a:hover {
 
 @media handheld and (orientation: portrait) and (min-aspect-ratio: 9/16) {
 	#intro-text {
-		width: 80%;
 		margin: 3% 0px;
-		display: block;
-		text-align: center;
 	}
 
 	#intro-text h1 {
-		font-size: 50px;
+		font-size: 55px;
 	}
 
 	#intro-text h2 {
 		font-size: 18px;
+	}
+}
+
+@media handheld and (orientation: portrait) and (min-aspect-ratio: 2/3) {
+	#intro-text {
+		margin: 2% 0px;
+	}
+
+	#intro-text h1 {
+		font-size: 34px;
+	}
+
+	#intro-text h2 {
+		font-size: 16px;
 	}
 }
 
@@ -802,6 +824,7 @@ footer p {
 	}
 
 	.contact p {
+		margin-top: 5px;
 		font-size: 15px;
 	}
 
