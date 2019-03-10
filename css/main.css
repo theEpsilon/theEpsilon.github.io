@@ -140,6 +140,74 @@ a:hover {
 	}
 }
 
+@media handheld and (orientation: portrait) {
+	.header-container {
+		background: url(../img/background-sn.jpg) no-repeat bottom center;
+		background-size: cover;
+		align-items: start;
+		justify-content: center;
+	}
+
+	#intro-text h1 {
+		display: block;
+		text-align: center;
+		padding: 0 10px;
+	}
+
+	#intro-text h2 {
+		text-align: center;
+		padding: 0 10px;
+	}
+
+	#intro-text {
+		width: 80%;
+		margin: 10% 0px;
+		display: block;
+		text-align: center;
+	}
+
+	#intro-text br {
+		display: none;
+	}
+}
+
+@media handheld and (orientation: portrait) and (min-aspect-ratio: 1/2) {
+	#intro-text {
+		width: 80%;
+		margin: 10% 0px;
+		display: block;
+		text-align: center;
+	}
+
+	#intro-text h1 {
+		font-size: 60px;
+	}
+
+	#intro-text h2 {
+		font-size: 20px;
+	}
+}
+
+@media handheld and (orientation: portrait) and (min-aspect-ratio: 9/16) {
+	#intro-text {
+		width: 80%;
+		margin: 3% 0px;
+		display: block;
+		text-align: center;
+	}
+
+	#intro-text h1 {
+		font-size: 50px;
+	}
+
+	#intro-text h2 {
+		font-size: 18px;
+	}
+}
+
+
+
+ /*
 @media (max-width: 1170px) and (orientation: portrait) {
 	.header-container {
 		align-items: start;
