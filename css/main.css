@@ -139,7 +139,7 @@ a:hover {
 		display: none;
 	}
 }
-
+ /*
 @media handheld and (orientation: portrait) {
 	.header-container {
 		background: url(../img/background-sn.jpg) no-repeat bottom center;
@@ -226,10 +226,10 @@ a:hover {
 		font-size: 16px;
 	}
 }
+*/
 
 
 
- /*
 @media (max-width: 1170px) and (orientation: portrait) {
 	.header-container {
 		align-items: start;
