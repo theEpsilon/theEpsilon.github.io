@@ -39,7 +39,7 @@ function assignClickEvents() {
         });
 
       } else {
-        content.css("max-height", content.prop("scrollHeight") + 200 + "px");
+        content.css("max-height", content.prop("scrollHeight") + 200 +"px");
         current.css("height", "auto");
         current.find(".dropdown-icon").css({transform: "rotate(180deg)", transition: "0.2s"});
       }

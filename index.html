@@ -16,25 +16,26 @@
 </head>
 <body>
 	<header>
-		<div class="header-container">
-			<div id="sm-container">
-				<a target="_blank" href="https://www.instagram.com/theepsil0n/"><svg class="sm-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a>
-
-				<a target="_blank" href="https://www.linkedin.com/in/fabian-berndt"><svg class="sm-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
-
-				<a target="_blank" href="https://www.facebook.com/fabian.berndt.1"><svg class="sm-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
-			</div>
-			<div id="intro-text">
-				<h1>Front-End <span style="color: #990000;">Web</span> and <br><span style="color: #009900;">Software</span> Developer</h1>
+		<div id="titlerow" class="row">
+			<div class="col-5 col-s4" id="introtext">
+				<h1>Front-End <span style="color: #990000;">Web</span> and <span style="color: #009900;">Software</span> Developer</h1>
 				<h2>My name is Fabian. <br>And wasted potential is my greatest fear.</h2>
 			</div>
+			<div id="titleimg" class="col-7 col-s8">
+				<img src="img/titleimg.png">
+			</div>
+		</div>
+		<div id="sm-container">
+			<a target="_blank" href="https://www.instagram.com/theepsil0n/"><svg class="sm-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a>
 
-				<!--<img id="title-img" src="img/titleimg.png">-->
+			<a target="_blank" href="https://www.linkedin.com/in/fabian-berndt"><svg class="sm-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+
+			<a target="_blank" href="https://www.facebook.com/fabian.berndt.1"><svg class="sm-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
 		</div>
 	</header>
 	<section id="about">
-		<div id="js-container-1" class="container">
-			<div id="profile" class="content-box js-coll">
+		<div class="row">
+			<div id="profile" class="col-4 col-s12 js-coll aboutbox">
 				<input id="checkbox-collapsible-1" type="checkbox" class="toggle nojs">
 				<label for="checkbox-collapsible-1" class="lbl-toggle nojs">
 					<div id="profile-banner" class="banner-header">
@@ -43,11 +44,6 @@
 						<i class="fas fa-chevron-down dropdown-icon"></i>
 					</div>
 				</label>
-				<!--<div class="icon-wrapper">
-					<i class="feather-64 content-icon" data-feather="user" style="color: #51a9e6"></i>
-					<span style="color: #51a9e6;" class="content-box-seperator hidden-wide">Profile</span>
-				</div>
-				<p class="text"><span style="color: #51a9e6;" class="content-box-seperator hidden-nar">Profile: </span>You already know my name, which is great, but far from everything there is to say about me. Click to view my personal profile.<br><br>Currently: Student of Business Informatics at TU Berlin</p>-->
 				<div class="collapsible-content nojs">
 					<ul>
 						<li>
@@ -73,7 +69,7 @@
 					</ul>
 				</div>
 			</div>
-			<div id="skills" class="content-box js-coll">
+			<div id="skills" class="col-4 col-s12 js-coll aboutbox">
 				<input id="checkbox-collapsible-2" type="checkbox" class="toggle nojs">
 				<label for="checkbox-collapsible-2" class="lbl-toggle nojs">
 					<div id="skills-banner" class="banner-header">
@@ -82,12 +78,6 @@
 						<i class="fas fa-chevron-down dropdown-icon"></i>
 					</div>
 				</label>
-				<!--<div class="icon-wrapper">
-					<i class="feather-64 content-icon" data-feather="code" style="color: #e34f26"></i>
-					<span style="color: #e34f26;" class="content-box-seperator hidden-wide">Skills</span>
-				</div>
-				<p class="text"><span style="color: #e34f26;" class="content-box-seperator hidden-nar">Skills: </span>As much as I love plain coding, being a developer is much more than just knowing a few programming languages. Click to see what I am already familiar with in terms of software and design.<br><br>Mainly: Java, HTML/CSS</p>
-				-->
 				<div class="collapsible-content nojs">
 					<ul style="padding-bottom: 0px;">
 						<span class="header">
@@ -145,7 +135,7 @@
 					</ul>
 				</div>
 			</div>
-			<div id="projects" class="content-box js-coll last">
+			<div id="projects" class="col-4 col-s12 js-coll aboutbox last">
 				<input id="checkbox-collapsible-3" type="checkbox" class="toggle nojs">
 				<label for="checkbox-collapsible-3" class="lbl-toggle nojs">
 					<div id="projects-banner" class="banner-header">
@@ -154,11 +144,6 @@
 						<i class="fas fa-chevron-down dropdown-icon"></i>
 					</div>
 				</label>
-				<!--<div class="icon-wrapper">
-					<i class="feather-64 content-icon" data-feather="zap" style="color: #a4c639"></i>
-					<span style="color: #a4c639;" class="content-box-seperator hidden-wide">Projects</span>
-				</div>
-				<p class="text"><span style="color: #a4c639;" class="content-box-seperator hidden-nar">Projects: </span>In my spare time I like creating websites from scratch, developing Android applications and tinkering with my Raspberry Pi. Click to see what I have done so far.<br><br>Mainly: Web development for STF Berlin e.V.</p>-->
 				<div class="collapsible-content nojs">
 					<ul>
 						<li style="align-items: start;">
@@ -178,8 +163,8 @@
 		</div>
 	</section>
 	<section id="stf">
-		<div class="flex-content">
-			<div class="overlay-container">
+		<div class="row">
+			<div id="stf-con" class="overlay-container col-6 col-s6">
 				<div class="overlay">
 					<p class="overlay-text">Schüler Treffen Flüchtlinge e.V. („Students meet refugees“) is a registered non-profit organization founded by students from Berlin. We host joint events for students from Germany and abroad with the goal to enable intercultural exchange and encourage students to take a broader part in social engagement.<br><br>
 					I am the head web developer of STF Berlin e.V. since 2018, because in my opinion, everybody can participate in making the world a better place.<br><br><a target="_blank" href="http://www.stfberlin.de">Click to go to www.stfberlin.de</a>
@@ -187,7 +172,7 @@
 				</div>
 				<img id="stf-website" src="img/stf.jpg">
 			</div>
-			<div class="overlay-container last">
+			<div id="az-con" class="overlay-container col-6 col-s6 last">
 				<img id="az-website" src="img/az.jpg">
 				<div class="overlay">
 					<p class="overlay-text">Aktion Zukunft 2018 (“Operation Future 2018”) is a multi-day workshop in Berlin organized by STF Berlin e.V. for students from migrant backgrounds in Germany. In our annual seminar we teach those students the techniques they require to develop and implement their own ideas and social projects in Germany.<br><br>Besides the main website of STF Berlin e.V., I am also constantly developing this website to fully represent our organization’s most successful venture.<br><br><a target="_blank" href="http://www.aktionzukunft2018.de">Click to go to www.aktionzukunft2018.de</a>
