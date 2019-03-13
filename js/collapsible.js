@@ -17,6 +17,7 @@ $(document).ready(function() {
 /*
 Called upon page loadup, assigning click listeners to collapsible items
 */
+
 function assignClickEvents() {
 
   var collapsibles = new Array();
@@ -50,9 +51,31 @@ function assignClickEvents() {
 function equalizeHeights() {
   var heights = new Array();
 
+  $(".banner-header").each(function() {
+
+  	heights.push($(this).outerHeight(true));
+
+  });
+
+  var maxHeight = Math.max.apply(Math, heights);
+
+  console.log(maxHeight);
+
+  $(".banner-header").each(function() {
+
+  	var outerheight = $(this).outerHeight(true);
+
+  	console.log(outerheight);
+  	console.log(maxHeight > outerheight);
+
+  	if(maxHeight > outerheight) {
+  		$(this).find(".text").css("margin-bottom", (maxHeight - outerheight) + "px");
+  	}
+  });
+  /*
   $(".js-coll").each(function() {
 
-    //console.log($(this).find(".collapsible-content").css("max-height"));
+    console.log($(this));
 
     if($(this).find(".collapsible-content").css("max-height") == "0px") {
       $(this).css("height", "auto");
@@ -61,7 +84,7 @@ function equalizeHeights() {
       heights.push($(this).outerHeight(true));
     }
   });
-
+	
   var maxHeight = Math.max.apply(Math, heights);
 
   console.log(maxHeight);
@@ -69,13 +92,10 @@ function equalizeHeights() {
   $(".js-coll").each(function() {
     if($(this).find(".collapsible-content").css("max-height") == "0px") {
       var outerheight = $(this).outerHeight(true);
-      console.log("Max-height: " + maxHeight);
-      console.log("Outer-height: " + outerheight);
-      console.log("Margin to set: " + (maxHeight - outerheight));
-      console.log(maxHeight > outerheight);
+
       if(maxHeight > outerheight) {
         $(this).find(".text").css("margin-bottom", (maxHeight - outerheight) + "px");
       }
     }
-  });
+  });*/
 }
