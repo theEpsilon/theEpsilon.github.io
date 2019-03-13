@@ -271,7 +271,7 @@ Banner section
 	background-color: #f2f2f2;
 }
 
-#stf p {
+#stf p, .banner-header {
 	-webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -289,12 +289,12 @@ input[type='checkbox'] {
 	display: none;
 }
 
-.lbl-toggle.nojs {
+.lbl-toggle {
 	display: block;
 }
 
-.toggle.nojs:checked + .lbl-toggle.nojs + .collapsible-content.nojs {
-  max-height: 500px;
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 700px;
 }
 
 .aboutbox {
@@ -353,15 +353,8 @@ input[type='checkbox'] {
 	background-color: #ffffff;
 	max-height: 0;
 	overflow: hidden;
-	transition: max-height .2s ease;
+	transition: max-height .4s ease;
 	text-align: left;
-}
-
-.collapsible-content.nojs {
-	background-color: #ffffff;
-	max-height: 0;
-	overflow: hidden;
-	transition: max-height 0.3s ease;
 }
 
 .collapsible-content ul {

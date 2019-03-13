@@ -1,6 +1,6 @@
 $(document).ready(function() {
   equalizeHeights();
-  assignClickEvents();
+  //assignClickEvents();
 
   var iv = null;
 
@@ -17,7 +17,7 @@ $(document).ready(function() {
 /*
 Called upon page loadup, assigning click listeners to collapsible items
 */
-
+/*
 function assignClickEvents() {
 
   var collapsibles = new Array();
@@ -47,13 +47,17 @@ function assignClickEvents() {
     });
   });
 }
-
+*/
 function equalizeHeights() {
   var heights = new Array();
 
   $(".banner-header").each(function() {
 
-  	heights.push($(this).outerHeight(true));
+    if($(this).find(".text").css("margin-bottom") != "0px") {
+      $(this).find(".text").css("margin-bottom", "0px");
+    }
+
+    heights.push($(this).outerHeight(true));
 
   });
 
