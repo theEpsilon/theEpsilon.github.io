@@ -1,0 +1,1292 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:200,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,300');
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+header {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-bottom-style: solid;
+    border-width: 3px;
+    border-color: #1d1d1d;
+    background: -webkit-linear-gradient(to right, #f5f5f5, white);
+    background: -o-linear-gradient(to right, #f5f5f5, white);
+    background: -webkit-gradient(linear, left top, right top, from(#f5f5f5), to(white));
+    background: -webkit-linear-gradient(left, #f5f5f5, white);
+    background: -o-linear-gradient(left, #f5f5f5, white);
+    background: linear-gradient(to right, #f5f5f5, white);
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 200;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 35px; 
+    font-weight: 400;
+    letter-spacing: -2px;
+    text-align: center;
+    margin: 0px;
+}
+
+h2 {
+    font-size: 0.8em;
+    font-weight: 400; 
+    line-height: 1.3;
+    text-align: center;
+}
+
+svg {
+    display: inline;
+    vertical-align: bottom;
+}
+
+a, a:visited, a:link {
+    color: black;
+}
+
+a:hover svg, a:active svg {
+    stroke: #00ba00;
+}
+
+a:hover, a:active {
+    color: #00ba00;
+}
+
+/* Mobile users */
+[class*="col-"] {
+    width: 100%;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#about a[href^="mailto"] { 
+    color: black; 
+}
+
+#about a[href^="mailto"]:hover { 
+    color: #00ba00; 
+}
+
+.flex-row-display {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+
+.hidden-wide {
+    display: none;
+}
+
+.hidden-nar {
+    display: inline;
+}
+
+#titlerow {
+    height: 100%;
+    width: 100%;
+}
+
+#introtext {
+    height: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+#introtext h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #1d1d1d;
+}
+
+#titleimg {
+    padding: 0px;
+    height: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+
+#titleimg img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+}
+
+@media (orientation: landscape) {
+
+    #introtext {
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        padding-left: 5%;
+    }
+
+    #introtext h1, h2 {
+        margin: 0.2em 0;
+        text-align: left;
+    }
+
+    #titleimg {
+        height: 100%;
+    }
+}
+
+#sm-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.sm-icon {
+    float: right;
+    font-size: 25px;
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+/*---------------------
+Banner section
+---------------------*/
+
+#about {
+    padding: 20px 5%;
+    background-color: #f2f2f2;
+}
+
+#stf p, .banner-header {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+label {
+    cursor: pointer;
+}
+
+input[type='checkbox'] {
+    display: none;
+}
+
+.lbl-toggle {
+    display: block;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 700px;
+}
+
+.aboutbox {
+    position: relative;
+    padding: 0px;
+    margin-bottom: 25px;
+    -webkit-box-shadow: 0px 0px 5px rgba(68, 68, 68, 0.6);
+            box-shadow: 0px 0px 5px rgba(68, 68, 68, 0.6);
+}
+
+.aboutbox a {
+    text-decoration: underline;
+}
+
+#projects {
+    margin-bottom: 0px;
+}
+
+.banner-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding: 40px 7.5% 40px 45%;
+}
+
+.banner-header h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px; 
+    font-weight: 400;
+    letter-spacing: -2px;
+    color: #1d1d1d;
+}
+
+.banner-header p {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#profile-banner {
+    background: url(../img/banner-profile-small.jpg) no-repeat left center, 
+    url(../img/banner-profile-end.png) no-repeat right center,
+    url(../img/white.jpg) repeat left top;
+    background-size: contain;
+}
+
+#skills-banner {
+    background: url(../img/banner-skills-small.jpg) no-repeat left center, 
+    url(../img/banner-skills-end.png) no-repeat right center,
+    url(../img/white.jpg) repeat left top;
+    background-size: contain;
+}
+
+#projects-banner {
+    background: url(../img/banner-projects-small.jpg) no-repeat left center, 
+    url(../img/banner-projects-end.png) no-repeat right center,
+    url(../img/white.jpg) repeat left top;
+    background-size: contain;
+}
+
+.collapsible-content {
+    background-color: #ffffff;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height .4s ease;
+    -o-transition: max-height .4s ease;
+    transition: max-height .4s ease;
+    text-align: left;
+}
+
+.collapsible-content ul {
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: #1d1d1d;
+    background-color: #ffffff;
+    padding: 20px 15% 40px 15%;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.collapsible-content li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: flex-start;
+        -ms-flex-pack: flex-start;
+            justify-content: flex-start;
+    margin-bottom: 15px;
+}
+
+.collapsible-content i {
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    color: #d1d1d1;
+    margin-right: 28px;
+    width: 25px;
+}
+
+.collapsible-content p {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    color: #1d1d1d;
+}
+
+.subheader {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: 80px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.subheader p {
+    color: #aaaaaa;
+    margin-top: 3px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.subheader i {
+    width: auto;
+    font-size: 25px;
+    display: block;
+    text-align: center;
+    margin: 0px;
+}
+
+.collapsible-content h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    display: inline-block;
+    margin: 15px 0px;
+}
+
+.header i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.pricon {
+    font-size: 35px;
+}
+
+.text {
+    text-align: right;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+.dropdown-icon {
+    font-size: 24px;
+    position: absolute;
+    bottom: 2px;
+    right: 50%;
+    margin-right: -12px;
+}
+
+.lbl-toggle:hover .dropdown-icon {
+    -webkit-animation: bounce 0.8s infinite;
+            animation: bounce 0.8s infinite;
+}
+
+/* Dropdown icon hover animation */
+@-webkit-keyframes bounce {
+    0% {bottom: 0px;}
+    70% {bottom: 5px;}
+    100% {bottom: 0px}
+}
+@keyframes bounce {
+    0% {bottom: 0px;}
+    70% {bottom: 5px;}
+    100% {bottom: 0px}
+}
+
+/*-----------------------------*/
+
+/*------------------
+Website references
+-------------------*/
+
+#stf {
+    background-color: #f2f2f2;
+    padding: 20px 5%;
+}
+
+.overlay-container {
+    position: relative;
+    padding: 0px;
+    margin-bottom: 15px;
+}
+
+.overlay-container img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay-text {
+    font-size: 11px;
+    margin: 10px;
+    text-align: justify;
+    font-weight: 400;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 1px;
+    border-width: 0px;
+    opacity: 0;
+    -webkit-transition: .4s ease;
+    -o-transition: .4s ease;
+    transition: .4s ease;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.overlay-container:hover .overlay {
+    opacity: 1;
+}
+
+a:hover .overlay {
+    color: black;
+}
+
+.section-heading {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*
+--------------------
+Contact
+--------------------
+*/
+
+#contact {
+    background-color: #1d1d1d;
+}
+
+.contact {
+    padding: 20px;
+}
+
+.contact * {
+    font-family: 'Roboto', sans-serif;
+    color: #f2f2f2;
+    text-align: center;
+}
+
+.contact p {
+    font-size: 15px;
+    margin-top: 5px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.contact h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.contact svg {
+    height: 20px;
+    width: 20px;
+    margin-right: 0.5em;
+}
+
+.contact a {
+    color: white;
+}
+
+.contact a:hover {
+    color: #00ba00;
+}
+
+@media (min-width: 400px) {
+    .contact h4 {
+        font-size: 20px;
+    }
+
+    .contact svg {
+        height: 20px;
+        width: 20px;
+    }
+
+    .contact p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 600px) {
+    .contact svg {
+        height: 24px;
+        width: 24px;
+    }
+
+    .contact p {
+        font-size: 20px;
+    }
+
+    .contact h4 {
+        font-size: 22px;
+    }
+}
+
+/*
+--------------------
+Footer
+--------------------
+*/
+
+footer {
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+footer p {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 14px;
+    color: #1d1d1d;
+    display: block;
+    text-align: center;
+}
+
+#joke {
+    margin-top: 5px;
+    float: none;
+}
+
+#joke i {
+    color: green;
+}
+
+/*
+-----------------
+General modification
+-----------------
+*/
+
+.feather-64 {
+    width: 64px;
+    height: 64px;
+}
+
+.feather-40 {
+    width: 40px;
+    height: 40px;
+}
+
+.last {
+    margin-right: 0px;
+}
+
+.last-bottom {
+    margin-bottom: 0px;
+}
+
+.placeholder {
+    height: 250px;
+    background-color: #e3e3e3;
+    -webkit-box-shadow: inset 0px 3px 10px rgba(68, 68, 68, 0.6);
+            box-shadow: inset 0px 3px 10px rgba(68, 68, 68, 0.6);
+}
+
+
+/*
+-----------------
+Media queries for cross-device support
+-----------------
+*/
+
+@media (orientation: landscape) {
+    .col-s1 { width: 8.33%; }
+    .col-s2 { width: 16.66%; }
+    .col-s3 { width: 25%; }
+    .col-s4 { width: 33.33%; }
+    .col-s5 { width: 41.66%; }
+    .col-s6 { width: 50%; }
+    .col-s7 { width: 58.33%; }
+    .col-s8 { width: 66.66%; }
+    .col-s9 { width: 75%; }
+    .col-s10 { width: 83.33%; }
+    .col-s11 { width: 91.66%; }
+    .col-s12 { width: 100%; }
+}
+
+@media (orientation: landscape) and (min-width: 600px) {
+    .col-1 { width: 8.33%; }
+    .col-2 { width: 16.66%; }
+    .col-3 { width: 25%; }
+    .col-4 { width: 33.33%; }
+    .col-5 { width: 41.66%; }
+    .col-6 { width: 50%; }
+    .col-7 { width: 58.33%; }
+    .col-8 { width: 66.66%; }
+    .col-9 { width: 75%; }
+    .col-10 { width: 83.33%; }
+    .col-11 { width: 91.66%; }
+    .col-12 { width: 100%; }
+}
+
+/**********************
+Title screen font sizes in portrait mode
+*********************/
+
+@media (min-width: 360px) {
+    h1 {
+        font-size: 40px; 
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .banner-header h3 {
+        font-size: 30px; 
+    }
+
+    .banner-header p {
+        font-size: 13px;
+    }
+
+    .collapsible-content p {
+        font-size: 13px;
+    }
+
+    .collapsible-content h4 {
+        font-size: 18px;
+    }
+
+    .subheader p {
+        font-size: 12px;
+    }
+
+    .collapsible-content i {
+        font-size: 20px;
+    }
+
+    .header i {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 400px) {
+    h1 {
+        font-size: 42px; 
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .overlay-text { font-size: 14px; }
+}
+
+@media (min-width: 600px) {
+    .banner-header h3 {
+        font-size: 40px; 
+    }
+
+    .banner-header p {
+        font-size: 18px;
+    }
+
+    .collapsible-content p {
+        font-size: 16px;
+    }
+
+    .collapsible-content h4 {
+        font-size: 23px;
+    }
+
+    .subheader p {
+        font-size: 13px;
+    }
+
+    .collapsible-content i {
+        font-size: 25px;
+    }
+
+    .header i {
+        font-size: 28px;
+    }
+
+    .overlay-text { font-size: 16px; }
+
+    footer p, #joke {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 750px) {
+    h1 {
+        font-size: 55px; 
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    .banner-header h3 {
+        font-size: 45px; 
+    }
+
+    .banner-header p {
+        font-size: 20px;
+    }
+
+    .collapsible-content p {
+        font-size: 20px;
+    }
+
+    .collapsible-content h4 {
+        font-size: 28px;
+    }
+
+    .subheader p {
+        font-size: 15px;
+    }
+
+    .collapsible-content i {
+        font-size: 25px;
+    }
+
+    .header i {
+        font-size: 35px;
+    }
+
+    .overlay-text { 
+        margin: 20px;
+        font-size: 18px; 
+    }
+
+    footer p {
+        text-align: left;
+        display: inline;
+    }
+
+    #joke {
+        margin-top: 0px;
+        float: right;
+    }
+}
+
+@media (min-width: 900px) {
+    h1 {
+        font-size: 60px; 
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .col-4.aboutbox {
+        margin-bottom: 0;
+        width: 32%;
+        margin-right: 2%;
+    }
+
+    #projects {
+        margin-right: 0px;
+    }
+
+    .banner-header h3 {
+        font-size: 30px; 
+    }
+
+    .banner-header p {
+        font-size: 15px;
+    }
+
+    .collapsible-content p {
+        font-size: 15px;
+    }
+
+    .collapsible-content h4 {
+        font-size: 20px;
+    }
+
+    .subheader p {
+        font-size: 13px;
+    }
+
+    .collapsible-content i {
+        font-size: 25px;
+    }
+
+    .header i {
+        font-size: 35px;
+    }
+
+    .overlay-text { 
+        margin: 25px;
+        font-size: 24px; 
+    }
+
+    footer p, #joke {
+        font-size: 20px;
+    }
+
+    .contact svg {
+        height: 24px;
+        width: 24px;
+    }
+
+    .contact p {
+        font-size: 20px;
+    }
+
+    .contact h4 {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 1000px) {
+    h1 {
+        font-size: 65px; 
+    }
+
+    h2 {
+        font-size: 1.7em;
+    }
+}
+
+@media (min-width: 1400px) {
+    h1 {
+        font-size: 75px; 
+    }
+
+    h2 {
+        font-size: 2.3em;
+    }
+
+    #profile-banner {
+        background: url(../img/banner-profile.png) no-repeat left center, 
+        url(../img/banner-profile-end.png) no-repeat right center,
+        url(../img/white.jpg) repeat left top;
+        background-size: contain;
+    }
+
+    #skills-banner {
+        background: url(../img/banner-skills.png) no-repeat left center, 
+        url(../img/banner-skills-end.png) no-repeat right center,
+        url(../img/white.jpg) repeat left top;
+        background-size: contain;
+    }
+
+    #projects-banner {
+        background: url(../img/banner-projects.png) no-repeat left center, 
+        url(../img/banner-projects-end.png) no-repeat right center,
+        url(../img/white.jpg) repeat left top;
+        background-size: contain;
+    }
+
+    .banner-header h3 {
+        font-size: 40px; 
+    }
+
+    .banner-header p {
+        font-size: 18px;
+    }
+
+    .collapsible-content p {
+        font-size: 18px;
+    }
+
+    .collapsible-content h4 {
+        font-size: 25px;
+    }
+
+    .subheader p {
+        font-size: 15px;
+    }
+
+    .collapsible-content i {
+        font-size: 25px;
+    }
+
+    .header i {
+        font-size: 35px;
+    }
+}
+
+/**********************
+Title screen font sizes in landscape mode
+*********************/
+
+@media (orientation: landscape) and (min-width: 400px) {
+    h1 {
+        font-size: 30px; 
+    }
+
+    h2 {
+        font-size: 0.8em;
+    }
+
+    .banner-header {
+        padding: 15px 7.5% 25px 45%;
+    }
+
+    .dropdown-icon {
+        font-size: 20px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 600px) {
+    h1 {
+        font-size: 30px; 
+    }
+
+    h2 {
+        font-size: 0.8em;
+    }
+
+    .col-4.aboutbox {
+        margin-bottom: 0;
+        width: 32%;
+        margin-right: 2%;
+    }
+
+    #projects {
+        margin-right: 0px;
+    }
+
+    .banner-header {
+        padding: 5px 7.5% 25px 45%;
+    }
+
+    .banner-header h3 {
+        font-size: 20px; 
+    }
+
+    .banner-header p {
+        font-size: 10px;
+    }
+
+    .collapsible-content ul {
+        padding: 15px 15px 25px 15px;
+    }
+
+    .collapsible-content p {
+        font-size: 10px;
+    }
+
+    .collapsible-content h4 {
+        font-size: 15px;
+    }
+
+    .subheader p {
+        font-size: 8px;
+    }
+
+    .collapsible-content i {
+        margin-right: 12px;
+        font-size: 18px;
+    }
+
+    .subheader {
+        width: 50px;
+        margin-right: 0px;
+    }
+
+    .subheader i {
+        margin-right: 0px;
+    }
+
+    .header i {
+        font-size: 25px;
+    }
+
+    .mail-address p {
+        word-wrap: break-word;
+    }
+
+    .collapsible-content .pricon {
+        font-size: 25px;
+    }
+
+    .dropdown-icon {
+        font-size: 16px;
+    }
+
+    #stf-con {
+        padding-right: 0.5%;
+    }
+
+    #az-con {
+        padding-left: 0.5%;
+    }
+
+    #stf-con .overlay {
+        right: 0.5%;
+    }
+
+    #az-con .overlay {
+        left: 0.5%;
+    }
+
+    .overlay-text {
+        font-size: 10px;
+    }
+
+    .contact svg {
+        height: 20px;
+        width: 20px;
+    }
+
+    .contact p {
+        font-size: 16px;
+    }
+
+    .contact h4 {
+        font-size: 20px;
+    }
+
+    footer p {
+        text-align: left;
+        display: inline;
+    }
+
+    #joke {
+        margin-top: 0px;
+        float: right;
+    }
+
+    footer p, #joke {
+        font-size: 16px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 700px) {
+    .banner-header h3 {
+        font-size: 25px; 
+    }
+
+    .banner-header p {
+        font-size: 10px;
+    }
+
+    .collapsible-content p {
+        font-size: 12px;
+    }
+
+    .collapsible-content h4 {
+        font-size: 16px;
+    }
+
+    .subheader p {
+        font-size: 10px;
+    }
+
+    .collapsible-content i {
+        margin-right: 12px;
+        font-size: 18px;
+    }
+
+    .subheader i {
+        margin-right: 0px;
+    }
+
+    .subheader {
+        margin-right: 2px;
+    }
+
+    .header i {
+        font-size: 25px;
+    }
+
+    .collapsible-content .pricon {
+        font-size: 25px;
+    }
+
+    .overlay-text {
+        font-size: 12px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 750px) {
+    h1 {
+        font-size: 40px; 
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 900px) {
+    h1 {
+        font-size: 50px; 
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    .banner-header {
+        padding: 15px 7.5% 20px 40%;
+    }
+
+    .banner-header h3 {
+        font-size: 30px; 
+    }
+
+    .banner-header p {
+        font-size: 14px;
+    }
+
+    .collapsible-content p {
+        font-size: 14px;
+    }
+
+    .collapsible-content h4 {
+        font-size: 16px;
+    }
+
+    .subheader p {
+        font-size: 12px;
+    }
+
+    .collapsible-content i {
+        margin-right: 12px;
+        font-size: 23px;
+    }
+
+    .collapsible-content ul {
+        padding: 20px 15% 40px 15%;
+    }
+
+    .subheader i {
+        margin-right: 0px;
+    }
+
+    .subheader {
+        margin-right: 10px;
+    }
+
+    .header i {
+        font-size: 25px;
+    }
+
+    .collapsible-content .pricon {
+        font-size: 30px;
+    }
+
+    .overlay-text {
+        font-size: 14px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1000px) {
+    h1 {
+        font-size: 55px; 
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .banner-header h3 {
+        font-size: 32px; 
+    }
+
+    .collapsible-content i {
+        margin-right: 20px;
+    }
+
+    .subheader i {
+        margin-right: 0px;
+    }
+
+    .subheader {
+        margin-right: 20px;
+    }
+
+    .overlay-text {
+        font-size: 16px;
+        margin: 20px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1400px) {
+    h1 {
+        font-size: 70px; 
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .banner-header {
+        padding: 40px 7.5% 40px 45%;
+    }
+
+    .banner-header h3 {
+        font-size: 40px; 
+    }
+
+    .banner-header p {
+        font-size: 16px;
+    }
+
+    .collapsible-content p {
+        font-size: 16px;
+    }
+
+    .subheader p {
+        font-size: 12px;
+    }
+
+    .collapsible-content h4 {
+        font-size: 20px;
+    }
+
+    .header i {
+        margin-right: 10px;
+        font-size: 35px;
+    }
+
+    .collapsible-content .pricon {
+        font-size: 40px;
+    }
+
+    .dropdown-icon {
+        font-size: 25px;
+    }
+}
+
+/***********
+End of media queries
+************/

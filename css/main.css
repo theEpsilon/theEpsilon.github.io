@@ -12,6 +12,9 @@ header {
 	border-bottom-style: solid;
 	border-width: 3px;
 	border-color: #1d1d1d;
+	background: -webkit-linear-gradient(to right, #f5f5f5, white);
+	background: -moz-linear-gradient(to right, #f5f5f5, white);
+	background: -o-linear-gradient(to right, #f5f5f5, white);
 	background: linear-gradient(to right, #f5f5f5, white);
 }
 
@@ -79,6 +82,10 @@ a:hover, a:active {
 }
 
 .flex-row-display {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -moz-flex;
 	display: flex;
 	flex-direction: row;
 }
