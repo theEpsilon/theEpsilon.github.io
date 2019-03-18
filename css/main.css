@@ -201,6 +201,10 @@ input[type='checkbox'] {
 	box-shadow: 0px 0px 5px rgba(68, 68, 68, 0.6);
 }
 
+.aboutbox a {
+	text-decoration: underline;
+}
+
 #projects {
 	margin-bottom: 0px;
 }
@@ -347,241 +351,6 @@ input[type='checkbox'] {
 	animation: bounce 0.8s infinite;
 }
 
-/*
-@media (min-width: 360px) {
-	.collapsible-content p {
-		font-size: 14px;
-	}
-
-	.collapsible-content i {
-		font-size: 23px;
-	}
-
-	.collapsible-content h4 {
-		font-size: 18px;
-	}
-}
-
-@media (min-width: 400px) {
-	.collapsible-content p {
-		font-size: 15px;
-	}
-
-	.collapsible-content i {
-		font-size: 25px;
-	}
-
-	.collapsible-content h4 {
-		font-size: 20px;
-	}
-
-	.collapsible-content .subheader p {
-
-	}
-
-	.banner-header h3 {
-		font-size: 40px; 
-	}
-
-	.banner-header p {
-		font-size: 15px;
-	}
-}
-
-@media (min-width: 500px) {
-	.banner-header h3 {
-		font-size: 48px; 
-	}
-
-	.banner-header p {
-		font-size: 20px;
-	}
-
-	#profile-banner {
-		background: url(../img/banner-profile.png) no-repeat left center, 
-		url(../img/banner-profile-end.png) no-repeat right center,
-		url(../img/white.jpg) repeat left top;
-		background-size: contain;
-	}
-
-	#skills-banner {
-		background: url(../img/banner-skills.png) no-repeat left center, 
-		url(../img/banner-skills-end.png) no-repeat right center,
-		url(../img/white.jpg) repeat left top;
-		background-size: contain;
-	}
-
-	#projects-banner {
-		background: url(../img/banner-projects.png) no-repeat left center, 
-		url(../img/banner-projects-end.png) no-repeat right center,
-		url(../img/white.jpg) repeat left top;
-		background-size: contain;
-	}
-}
-
-@media (min-width: 750px) {
-	.collapsible-content p {
-		font-size: 20px;
-	}
-
-	.collapsible-content i {
-		font-size: 25px;
-	}
-
-	.collapsible-content h4 {
-		font-size: 25px;
-	}
-
-	.collapsible-content .subheader p {
-		font-size: 15px;
-	}
-}
-
-@media (min-width: 800px) {
-	.banner-header h3 {
-		font-size: 60px; 
-	}
-
-	.banner-header p {
-		font-size: 25px;
-	}
-}
-
-@media (min-width: 900px) {
-
-	.banner-header h3 {
-		font-size: 65px; 
-	}
-
-	.banner-header p {
-		font-size: 25px;
-	}
-}
-
-@media (min-width: 1100px) {
-
-	.col-4.aboutbox {
-		margin-bottom: 0;
-		width: 32%;
-		margin-right: 2%;
-	}
-
-	#projects {
-		margin-right: 0px;
-	}
-
-	#profile-banner {
-		background: url(../img/banner-profile-small.jpg) no-repeat left center, 
-		url(../img/banner-profile-end.png) no-repeat right center,
-		url(../img/white.jpg) repeat left top;
-		background-size: contain;
-	}
-
-	#skills-banner {
-		background: url(../img/banner-skills-small.jpg) no-repeat left center, 
-		url(../img/banner-skills-end.png) no-repeat right center,
-		url(../img/white.jpg) repeat left top;
-		background-size: contain;
-	}
-
-	#projects-banner {
-		background: url(../img/banner-projects-small.jpg) no-repeat left center, 
-		url(../img/banner-projects-end.png) no-repeat right center,
-		url(../img/white.jpg) repeat left top;
-		background-size: contain;
-	}
-
-	.banner-header h3 {
-		font-size: 38px; 
-	}
-
-	.banner-header p {
-		font-size: 15px;
-	}
-
-	.collapsible-content p {
-		font-size: 15px;
-	}
-
-	.collapsible-content i {
-		font-size: 20px;
-	}
-
-	.collapsible-content h4 {
-		font-size: 20px;
-	}
-
-	.collapsible-content .subheader p {
-		font-size: 12px;
-	}
-}
-
-@media (min-width: 1280px) {
-	#profile-banner {
-		background: url(../img/banner-profile.png) no-repeat left center, 
-		url(../img/banner-profile-end.png) no-repeat right center,
-		url(../img/white.jpg) repeat left top;
-		background-size: contain;
-	}
-
-	#skills-banner {
-		background: url(../img/banner-skills.png) no-repeat left center, 
-		url(../img/banner-skills-end.png) no-repeat right center,
-		url(../img/white.jpg) repeat left top;
-		background-size: contain;
-	}
-
-	#projects-banner {
-		background: url(../img/banner-projects.png) no-repeat left center, 
-		url(../img/banner-projects-end.png) no-repeat right center,
-		url(../img/white.jpg) repeat left top;
-		background-size: contain;
-	}
-
-	.collapsible-content p {
-		font-size: 18px;
-	}
-
-	.collapsible-content i {
-		font-size: 22px;
-	}
-
-	.collapsible-content h4 {
-		font-size: 22px;
-	}
-
-	.collapsible-content .subheader p {
-		font-size: 12px;
-	}
-}
-
-@media (min-width: 1600px) {
-
-	.banner-header h3 {
-		font-size: 50px; 
-	}
-
-	.banner-header p {
-		font-size: 18px;
-	}
-
-	.collapsible-content p {
-		font-size: 18px;
-	}
-
-	.collapsible-content i {
-		font-size: 25px;
-	}
-
-	.collapsible-content h4 {
-		font-size: 25px;
-	}
-
-	.collapsible-content .subheader p {
-		font-size: 15px;
-	}
-}
-
 /* Dropdown icon hover animation */
 @keyframes bounce {
 	0% {bottom: 0px;}
@@ -650,65 +419,6 @@ a:hover .overlay {
 	margin-bottom: 20px;
 }
 
-@media (min-width: 360px) {
-	.overlay-text {
-		font-size: 12px;
-	}
-}
-
-@media (min-width: 400px) {
-	.overlay-text {
-		font-size: 13px;
-		margin: 15px;
-	}
-}
-
-@media (min-width: 400px) {
-	.overlay-text {
-		font-size: 13px;
-		margin: 15px;
-	}
-}
-
-@media (min-width: 500px) {
-	.overlay-text {
-		font-size: 15px;
-		margin: 15px;
-	}
-}
-
-@media (min-width: 500px) {
-	.overlay-text {
-		font-size: 15px;
-		margin: 25px;
-	}
-}
-
-@media (min-width: 900px) {
-	#stf-con.overlay-container {
-		width: 49.5%;
-		margin-right: 0.5%
-	}
-
-	#az-con.overlay-container {
-		width: 49.5%;
-		margin-left: 0.5%
-	}
-
-	.overlay-text {
-		font-size: 15px;
-		margin: 25px;
-	}
-}
-
-@media (min-width: 1250px) {
-	.overlay-text {
-		font-size: 20px;
-		margin: 25px;
-	}
-}
-
-
 /*
 --------------------
 Contact
@@ -737,7 +447,7 @@ Contact
 }
 
 .contact h4 {
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 400;
 	margin: 0px;
 }
@@ -757,6 +467,10 @@ Contact
 }
 
 @media (min-width: 400px) {
+	.contact h4 {
+		font-size: 20px;
+	}
+
 	.contact svg {
 		height: 20px;
 		width: 20px;
@@ -796,33 +510,19 @@ footer {
 footer p {
 	font-family: 'Roboto Mono', monospace;
 	font-weight: 300;
-	font-size: 20px;
+	font-size: 14px;
 	color: #1d1d1d;
-	vertical-align: middle;
-	text-align: left;
-	display: inline;
+	display: block;
+	text-align: center;
 }
 
 #joke {
-	float: right;
+	margin-top: 5px;
+	float: none;
 }
 
 #joke i {
 	color: green;
-}
-
-@media (max-width: 450px) {
-
-	footer p {
-		font-size: 14px;
-		display: block;
-		text-align: center;
-	}
-
-	#joke {
-		margin-top: 5px;
-		float: none;
-	}
 }
 
 /*
@@ -942,6 +642,8 @@ Title screen font sizes in portrait mode
 	h2 {
 		font-size: 1em;
 	}
+
+	.overlay-text { font-size: 14px; }
 }
 
 @media (min-width: 600px) {
@@ -971,6 +673,12 @@ Title screen font sizes in portrait mode
 
 	.header i {
 		font-size: 28px;
+	}
+
+	.overlay-text { font-size: 16px; }
+
+	footer p, #joke {
+		font-size: 18px;
 	}
 }
 
@@ -1009,6 +717,21 @@ Title screen font sizes in portrait mode
 
 	.header i {
 		font-size: 35px;
+	}
+
+	.overlay-text { 
+		margin: 20px;
+		font-size: 18px; 
+	}
+
+	footer p {
+		text-align: left;
+		display: inline;
+	}
+
+	#joke {
+		margin-top: 0px;
+		float: right;
 	}
 }
 
@@ -1057,6 +780,28 @@ Title screen font sizes in portrait mode
 
 	.header i {
 		font-size: 35px;
+	}
+
+	.overlay-text { 
+		margin: 25px;
+		font-size: 24px; 
+	}
+
+	footer p, #joke {
+		font-size: 20px;
+	}
+
+	.contact svg {
+		height: 24px;
+		width: 24px;
+	}
+
+	.contact p {
+		font-size: 20px;
+	}
+
+	.contact h4 {
+		font-size: 25px;
 	}
 }
 
@@ -1143,7 +888,7 @@ Title screen font sizes in landscape mode
 	}
 
 	.banner-header {
-		padding: 10px 7.5% 15px 45%;
+		padding: 5px 7.5% 20px 45%;
 	}
 }
 
@@ -1167,7 +912,7 @@ Title screen font sizes in landscape mode
 	}
 
 	.banner-header h3 {
-		font-size: 25px; 
+		font-size: 20px; 
 	}
 
 	.banner-header p {
@@ -1219,6 +964,53 @@ Title screen font sizes in landscape mode
 	.dropdown-icon {
 		font-size: 16px;
 	}
+
+	#stf-con {
+		padding-right: 0.5%;
+	}
+
+	#az-con {
+		padding-left: 0.5%;
+	}
+
+	#stf-con .overlay {
+		right: 0.5%;
+	}
+
+	#az-con .overlay {
+		left: 0.5%;
+	}
+
+	.overlay-text {
+		font-size: 10px;
+	}
+
+	.contact svg {
+		height: 20px;
+		width: 20px;
+	}
+
+	.contact p {
+		font-size: 16px;
+	}
+
+	.contact h4 {
+		font-size: 20px;
+	}
+
+	footer p {
+		text-align: left;
+		display: inline;
+	}
+
+	#joke {
+		margin-top: 0px;
+		float: right;
+	}
+
+	footer p, #joke {
+		font-size: 16px;
+	}
 }
 
 @media (orientation: landscape) and (min-width: 700px) {
@@ -1227,7 +1019,7 @@ Title screen font sizes in landscape mode
 	}
 
 	.banner-header p {
-		font-size: 12px;
+		font-size: 10px;
 	}
 
 	.collapsible-content p {
@@ -1262,6 +1054,10 @@ Title screen font sizes in landscape mode
 	.collapsible-content .pricon {
 		font-size: 25px;
 	}
+
+	.overlay-text {
+		font-size: 12px;
+	}
 }
 
 @media (orientation: landscape) and (min-width: 750px) {
@@ -1282,6 +1078,59 @@ Title screen font sizes in landscape mode
 	h2 {
 		font-size: 1.3em;
 	}
+
+	.banner-header {
+		padding: 15px 7.5% 20px 40%;
+	}
+
+	.banner-header h3 {
+		font-size: 30px; 
+	}
+
+	.banner-header p {
+		font-size: 14px;
+	}
+
+	.collapsible-content p {
+		font-size: 14px;
+	}
+
+	.collapsible-content h4 {
+		font-size: 16px;
+	}
+
+	.subheader p {
+		font-size: 12px;
+	}
+
+	.collapsible-content i {
+		margin-right: 12px;
+		font-size: 23px;
+	}
+
+	.collapsible-content ul {
+		padding: 20px 15% 40px 15%;
+	}
+
+	.subheader i {
+		margin-right: 0px;
+	}
+
+	.subheader {
+		margin-right: 10px;
+	}
+
+	.header i {
+		font-size: 25px;
+	}
+
+	.collapsible-content .pricon {
+		font-size: 30px;
+	}
+
+	.overlay-text {
+		font-size: 14px;
+	}
 }
 
 @media (orientation: landscape) and (min-width: 1000px) {
@@ -1292,15 +1141,69 @@ Title screen font sizes in landscape mode
 	h2 {
 		font-size: 1.5em;
 	}
+
+	.banner-header h3 {
+		font-size: 32px; 
+	}
+
+	.collapsible-content i {
+		margin-right: 20px;
+	}
+
+	.subheader i {
+		margin-right: 0px;
+	}
+
+	.subheader {
+		margin-right: 20px;
+	}
+
+	.overlay-text {
+		font-size: 16px;
+		margin: 20px;
+	}
 }
 
-@media (orientation: landscape) and (min-width: 1500px) {
+@media (orientation: landscape) and (min-width: 1400px) {
 	h1 {
 		font-size: 70px; 
 	}
 
 	h2 {
 		font-size: 2em;
+	}
+
+	.banner-header {
+		padding: 40px 7.5% 40px 45%;
+	}
+
+	.banner-header h3 {
+		font-size: 40px; 
+	}
+
+	.banner-header p {
+		font-size: 16px;
+	}
+
+	.collapsible-content p {
+		font-size: 16px;
+	}
+
+	.collapsible-content h4 {
+		font-size: 20px;
+	}
+
+	.header i {
+		margin-right: 10px;
+		font-size: 35px;
+	}
+
+	.collapsible-content .pricon {
+		font-size: 40px;
+	}
+
+	.dropdown-icon {
+		font-size: 25px;
 	}
 }
 
