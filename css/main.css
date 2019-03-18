@@ -888,7 +888,11 @@ Title screen font sizes in landscape mode
 	}
 
 	.banner-header {
-		padding: 5px 7.5% 20px 45%;
+		padding: 15px 7.5% 25px 45%;
+	}
+
+	.dropdown-icon {
+		font-size: 20px;
 	}
 }
 
@@ -909,6 +913,10 @@ Title screen font sizes in landscape mode
 
 	#projects {
 		margin-right: 0px;
+	}
+
+	.banner-header {
+		padding: 5px 7.5% 25px 45%;
 	}
 
 	.banner-header h3 {
