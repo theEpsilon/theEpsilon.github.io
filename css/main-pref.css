@@ -4,7 +4,7 @@
 
 * {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 header {
@@ -16,7 +16,13 @@ header {
     border-color: #1d1d1d;
     background: -webkit-linear-gradient(to right, #f5f5f5, white);
     background: -o-linear-gradient(to right, #f5f5f5, white);
-    background: -webkit-gradient(linear, left top, right top, from(#f5f5f5), to(white));
+    background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#f5f5f5),
+        to(white)
+    );
     background: -webkit-linear-gradient(left, #f5f5f5, white);
     background: -o-linear-gradient(left, #f5f5f5, white);
     background: linear-gradient(to right, #f5f5f5, white);
@@ -30,7 +36,7 @@ p {
 }
 
 h1 {
-    font-size: 35px; 
+    font-size: 35px;
     font-weight: 400;
     letter-spacing: -2px;
     text-align: center;
@@ -39,7 +45,7 @@ h1 {
 
 h2 {
     font-size: 0.8em;
-    font-weight: 400; 
+    font-weight: 400;
     line-height: 1.3;
     text-align: center;
 }
@@ -49,40 +55,44 @@ svg {
     vertical-align: bottom;
 }
 
-a, a:visited, a:link {
+a,
+a:visited,
+a:link {
     color: black;
 }
 
-a:hover svg, a:active svg {
+a:hover svg,
+a:active svg {
     stroke: #00ba00;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
     color: #00ba00;
 }
 
 /* Mobile users */
-[class*="col-"] {
+[class*='col-'] {
     width: 100%;
 }
 
-[class*="col-"] {
+[class*='col-'] {
     float: left;
     padding: 15px;
 }
 
 .row::after {
-    content: "";
+    content: '';
     clear: both;
     display: table;
 }
 
-#about a[href^="mailto"] { 
-    color: black; 
+#about a[href^='mailto'] {
+    color: black;
 }
 
-#about a[href^="mailto"]:hover { 
-    color: #00ba00; 
+#about a[href^='mailto']:hover {
+    color: #00ba00;
 }
 
 .flex-row-display {
@@ -92,8 +102,8 @@ a:hover, a:active {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
 }
 
 .hidden-wide {
@@ -116,17 +126,18 @@ a:hover, a:active {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
-#introtext h1, h2 {
+#introtext h1,
+h2 {
     font-family: 'Roboto', sans-serif;
     color: #1d1d1d;
     width: 100%;
@@ -134,16 +145,17 @@ a:hover, a:active {
 
 #titleimg {
     padding: 0px;
+    padding-left: 50px;
     height: 60%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
 }
 
 #titleimg img {
@@ -154,7 +166,6 @@ a:hover, a:active {
 }
 
 @media (orientation: landscape) {
-
     #introtext {
         height: 100%;
         display: -webkit-box;
@@ -162,18 +173,19 @@ a:hover, a:active {
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
         padding-left: 5%;
     }
 
-    #introtext h1, h2 {
+    #introtext h1,
+    h2 {
         margin: 0.2em 0;
         text-align: left;
     }
@@ -206,12 +218,13 @@ Banner section
     background-color: #f2f2f2;
 }
 
-#stf p, .banner-header {
+#stf p,
+.banner-header {
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
 
@@ -228,7 +241,7 @@ input[type='checkbox'] {
 }
 
 .toggle:checked + .lbl-toggle + .collapsible-content {
-  max-height: 700px;
+    max-height: 700px;
 }
 
 .aboutbox {
@@ -236,7 +249,7 @@ input[type='checkbox'] {
     padding: 0px;
     margin-bottom: 25px;
     -webkit-box-shadow: 0px 0px 5px rgba(68, 68, 68, 0.6);
-            box-shadow: 0px 0px 5px rgba(68, 68, 68, 0.6);
+    box-shadow: 0px 0px 5px rgba(68, 68, 68, 0.6);
 }
 
 .aboutbox a {
@@ -253,17 +266,17 @@ input[type='checkbox'] {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
     padding: 40px 7.5% 40px 45%;
 }
 
 .banner-header h3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 30px; 
+    font-size: 30px;
     font-weight: 400;
     letter-spacing: -2px;
     color: #1d1d1d;
@@ -275,23 +288,23 @@ input[type='checkbox'] {
 }
 
 #profile-banner {
-    background: url(../img/banner-profile-small.jpg) no-repeat left center, 
-    url(../img/banner-profile-end.png) no-repeat right center,
-    url(../img/white.jpg) repeat left top;
+    background: url(../img/banner-profile-small.jpg) no-repeat left center,
+        url(../img/banner-profile-end.png) no-repeat right center,
+        url(../img/white.jpg) repeat left top;
     background-size: contain;
 }
 
 #skills-banner {
-    background: url(../img/banner-skills-small.jpg) no-repeat left center, 
-    url(../img/banner-skills-end.png) no-repeat right center,
-    url(../img/white.jpg) repeat left top;
+    background: url(../img/banner-skills-small.jpg) no-repeat left center,
+        url(../img/banner-skills-end.png) no-repeat right center,
+        url(../img/white.jpg) repeat left top;
     background-size: contain;
 }
 
 #projects-banner {
-    background: url(../img/banner-projects-small.jpg) no-repeat left center, 
-    url(../img/banner-projects-end.png) no-repeat right center,
-    url(../img/white.jpg) repeat left top;
+    background: url(../img/banner-projects-small.jpg) no-repeat left center,
+        url(../img/banner-projects-end.png) no-repeat right center,
+        url(../img/white.jpg) repeat left top;
     background-size: contain;
 }
 
@@ -299,9 +312,9 @@ input[type='checkbox'] {
     background-color: #ffffff;
     max-height: 0;
     overflow: hidden;
-    -webkit-transition: max-height .4s ease;
-    -o-transition: max-height .4s ease;
-    transition: max-height .4s ease;
+    -webkit-transition: max-height 0.4s ease;
+    -o-transition: max-height 0.4s ease;
+    transition: max-height 0.4s ease;
     text-align: left;
 }
 
@@ -321,14 +334,14 @@ input[type='checkbox'] {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: flex-start;
-        -ms-flex-pack: flex-start;
-            justify-content: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
     margin-bottom: 15px;
 }
 
@@ -350,7 +363,7 @@ input[type='checkbox'] {
 
 .subheader {
     -ms-flex-negative: 0;
-        flex-shrink: 0;
+    flex-shrink: 0;
     width: 80px;
     margin-right: 10px;
     text-align: center;
@@ -389,7 +402,8 @@ input[type='checkbox'] {
     font-size: 35px;
 }
 
-#proj-html, #proj-andr {
+#proj-html,
+#proj-andr {
     width: auto;
 }
 
@@ -410,19 +424,31 @@ input[type='checkbox'] {
 
 .lbl-toggle:hover .dropdown-icon {
     -webkit-animation: bounce 0.8s infinite;
-            animation: bounce 0.8s infinite;
+    animation: bounce 0.8s infinite;
 }
 
 /* Dropdown icon hover animation */
 @-webkit-keyframes bounce {
-    0% {bottom: 0px;}
-    70% {bottom: 5px;}
-    100% {bottom: 0px}
+    0% {
+        bottom: 0px;
+    }
+    70% {
+        bottom: 5px;
+    }
+    100% {
+        bottom: 0px;
+    }
 }
 @keyframes bounce {
-    0% {bottom: 0px;}
-    70% {bottom: 5px;}
-    100% {bottom: 0px}
+    0% {
+        bottom: 0px;
+    }
+    70% {
+        bottom: 5px;
+    }
+    100% {
+        bottom: 0px;
+    }
 }
 
 /*-----------------------------*/
@@ -465,15 +491,15 @@ Website references
     border-radius: 1px;
     border-width: 0px;
     opacity: 0;
-    -webkit-transition: .4s ease;
-    -o-transition: .4s ease;
-    transition: .4s ease;
+    -webkit-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+    transition: 0.4s ease;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .overlay-container:hover .overlay {
@@ -626,9 +652,8 @@ General modification
     height: 250px;
     background-color: #e3e3e3;
     -webkit-box-shadow: inset 0px 3px 10px rgba(68, 68, 68, 0.6);
-            box-shadow: inset 0px 3px 10px rgba(68, 68, 68, 0.6);
+    box-shadow: inset 0px 3px 10px rgba(68, 68, 68, 0.6);
 }
-
 
 /*
 -----------------
@@ -637,33 +662,81 @@ Media queries for cross-device support
 */
 
 @media (orientation: landscape) {
-    .col-s1 { width: 8.33%; }
-    .col-s2 { width: 16.66%; }
-    .col-s3 { width: 25%; }
-    .col-s4 { width: 33.33%; }
-    .col-s5 { width: 41.66%; }
-    .col-s6 { width: 50%; }
-    .col-s7 { width: 58.33%; }
-    .col-s8 { width: 66.66%; }
-    .col-s9 { width: 75%; }
-    .col-s10 { width: 83.33%; }
-    .col-s11 { width: 91.66%; }
-    .col-s12 { width: 100%; }
+    .col-s1 {
+        width: 8.33%;
+    }
+    .col-s2 {
+        width: 16.66%;
+    }
+    .col-s3 {
+        width: 25%;
+    }
+    .col-s4 {
+        width: 33.33%;
+    }
+    .col-s5 {
+        width: 41.66%;
+    }
+    .col-s6 {
+        width: 50%;
+    }
+    .col-s7 {
+        width: 58.33%;
+    }
+    .col-s8 {
+        width: 66.66%;
+    }
+    .col-s9 {
+        width: 75%;
+    }
+    .col-s10 {
+        width: 83.33%;
+    }
+    .col-s11 {
+        width: 91.66%;
+    }
+    .col-s12 {
+        width: 100%;
+    }
 }
 
 @media (orientation: landscape) and (min-width: 600px) {
-    .col-1 { width: 8.33%; }
-    .col-2 { width: 16.66%; }
-    .col-3 { width: 25%; }
-    .col-4 { width: 33.33%; }
-    .col-5 { width: 41.66%; }
-    .col-6 { width: 50%; }
-    .col-7 { width: 58.33%; }
-    .col-8 { width: 66.66%; }
-    .col-9 { width: 75%; }
-    .col-10 { width: 83.33%; }
-    .col-11 { width: 91.66%; }
-    .col-12 { width: 100%; }
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
 }
 
 /**********************
@@ -672,7 +745,7 @@ Title screen font sizes in portrait mode
 
 @media (min-width: 360px) {
     h1 {
-        font-size: 40px; 
+        font-size: 40px;
     }
 
     h2 {
@@ -680,7 +753,7 @@ Title screen font sizes in portrait mode
     }
 
     .banner-header h3 {
-        font-size: 30px; 
+        font-size: 30px;
     }
 
     .banner-header p {
@@ -710,19 +783,21 @@ Title screen font sizes in portrait mode
 
 @media (min-width: 400px) {
     h1 {
-        font-size: 42px; 
+        font-size: 42px;
     }
 
     h2 {
         font-size: 1em;
     }
 
-    .overlay-text { font-size: 14px; }
+    .overlay-text {
+        font-size: 14px;
+    }
 }
 
 @media (min-width: 600px) {
     .banner-header h3 {
-        font-size: 40px; 
+        font-size: 40px;
     }
 
     .banner-header p {
@@ -749,16 +824,19 @@ Title screen font sizes in portrait mode
         font-size: 28px;
     }
 
-    .overlay-text { font-size: 16px; }
+    .overlay-text {
+        font-size: 16px;
+    }
 
-    footer p, #joke {
+    footer p,
+    #joke {
         font-size: 18px;
     }
 }
 
 @media (min-width: 750px) {
     h1 {
-        font-size: 55px; 
+        font-size: 55px;
     }
 
     h2 {
@@ -766,7 +844,7 @@ Title screen font sizes in portrait mode
     }
 
     .banner-header h3 {
-        font-size: 45px; 
+        font-size: 45px;
     }
 
     .banner-header p {
@@ -793,9 +871,9 @@ Title screen font sizes in portrait mode
         font-size: 35px;
     }
 
-    .overlay-text { 
+    .overlay-text {
         margin: 20px;
-        font-size: 18px; 
+        font-size: 18px;
     }
 
     footer p {
@@ -811,7 +889,7 @@ Title screen font sizes in portrait mode
 
 @media (min-width: 900px) {
     h1 {
-        font-size: 60px; 
+        font-size: 60px;
     }
 
     h2 {
@@ -829,7 +907,7 @@ Title screen font sizes in portrait mode
     }
 
     .banner-header h3 {
-        font-size: 30px; 
+        font-size: 30px;
     }
 
     .banner-header p {
@@ -856,12 +934,13 @@ Title screen font sizes in portrait mode
         font-size: 35px;
     }
 
-    .overlay-text { 
+    .overlay-text {
         margin: 25px;
-        font-size: 24px; 
+        font-size: 24px;
     }
 
-    footer p, #joke {
+    footer p,
+    #joke {
         font-size: 20px;
     }
 
@@ -881,7 +960,7 @@ Title screen font sizes in portrait mode
 
 @media (min-width: 1000px) {
     h1 {
-        font-size: 65px; 
+        font-size: 65px;
     }
 
     h2 {
@@ -891,7 +970,7 @@ Title screen font sizes in portrait mode
 
 @media (min-width: 1400px) {
     h1 {
-        font-size: 75px; 
+        font-size: 75px;
     }
 
     h2 {
@@ -899,28 +978,28 @@ Title screen font sizes in portrait mode
     }
 
     #profile-banner {
-        background: url(../img/banner-profile.png) no-repeat left center, 
-        url(../img/banner-profile-end.png) no-repeat right center,
-        url(../img/white.jpg) repeat left top;
+        background: url(../img/banner-profile.png) no-repeat left center,
+            url(../img/banner-profile-end.png) no-repeat right center,
+            url(../img/white.jpg) repeat left top;
         background-size: contain;
     }
 
     #skills-banner {
-        background: url(../img/banner-skills.png) no-repeat left center, 
-        url(../img/banner-skills-end.png) no-repeat right center,
-        url(../img/white.jpg) repeat left top;
+        background: url(../img/banner-skills.png) no-repeat left center,
+            url(../img/banner-skills-end.png) no-repeat right center,
+            url(../img/white.jpg) repeat left top;
         background-size: contain;
     }
 
     #projects-banner {
-        background: url(../img/banner-projects.png) no-repeat left center, 
-        url(../img/banner-projects-end.png) no-repeat right center,
-        url(../img/white.jpg) repeat left top;
+        background: url(../img/banner-projects.png) no-repeat left center,
+            url(../img/banner-projects-end.png) no-repeat right center,
+            url(../img/white.jpg) repeat left top;
         background-size: contain;
     }
 
     .banner-header h3 {
-        font-size: 40px; 
+        font-size: 40px;
     }
 
     .banner-header p {
@@ -954,7 +1033,7 @@ Title screen font sizes in landscape mode
 
 @media (orientation: landscape) and (min-width: 400px) {
     h1 {
-        font-size: 30px; 
+        font-size: 30px;
     }
 
     h2 {
@@ -972,7 +1051,7 @@ Title screen font sizes in landscape mode
 
 @media (orientation: landscape) and (min-width: 600px) {
     h1 {
-        font-size: 30px; 
+        font-size: 30px;
     }
 
     h2 {
@@ -994,7 +1073,7 @@ Title screen font sizes in landscape mode
     }
 
     .banner-header h3 {
-        font-size: 20px; 
+        font-size: 20px;
     }
 
     .banner-header p {
@@ -1090,14 +1169,15 @@ Title screen font sizes in landscape mode
         float: right;
     }
 
-    footer p, #joke {
+    footer p,
+    #joke {
         font-size: 16px;
     }
 }
 
 @media (orientation: landscape) and (min-width: 700px) {
     .banner-header h3 {
-        font-size: 25px; 
+        font-size: 25px;
     }
 
     .banner-header p {
@@ -1144,7 +1224,7 @@ Title screen font sizes in landscape mode
 
 @media (orientation: landscape) and (min-width: 750px) {
     h1 {
-        font-size: 40px; 
+        font-size: 40px;
     }
 
     h2 {
@@ -1155,7 +1235,7 @@ Title screen font sizes in landscape mode
 @media (orientation: landscape) and (min-width: 900px) {
     h1 {
         font-weight: 300;
-        font-size: 50px; 
+        font-size: 50px;
     }
 
     h2 {
@@ -1164,13 +1244,12 @@ Title screen font sizes in landscape mode
     }
 
     .banner-header {
-
         padding: 15px 7.5% 20px 40%;
     }
 
     .banner-header h3 {
         font-weight: 300;
-        font-size: 30px; 
+        font-size: 30px;
     }
 
     .banner-header p {
@@ -1224,7 +1303,7 @@ Title screen font sizes in landscape mode
 
 @media (orientation: landscape) and (min-width: 1000px) {
     h1 {
-        font-size: 55px; 
+        font-size: 55px;
     }
 
     h2 {
@@ -1232,7 +1311,7 @@ Title screen font sizes in landscape mode
     }
 
     .banner-header h3 {
-        font-size: 32px; 
+        font-size: 32px;
     }
 
     .collapsible-content i {
@@ -1255,7 +1334,7 @@ Title screen font sizes in landscape mode
 
 @media (orientation: landscape) and (min-width: 1400px) {
     h1 {
-        font-size: 70px; 
+        font-size: 70px;
     }
 
     h2 {
@@ -1267,7 +1346,7 @@ Title screen font sizes in landscape mode
     }
 
     .banner-header h3 {
-        font-size: 40px; 
+        font-size: 40px;
     }
 
     .banner-header p {
@@ -1297,6 +1376,12 @@ Title screen font sizes in landscape mode
 
     .dropdown-icon {
         font-size: 25px;
+    }
+}
+
+@media (min-device-aspect-ratio: 460/680) {
+    #titleimg {
+        padding-left: 0px;
     }
 }
 
